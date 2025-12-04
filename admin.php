@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     <meta charset="utf-8">
     <title>Benutzerverwaltung - <?= htmlspecialchars($appName) ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -286,7 +286,7 @@ include __DIR__ . '/includes/user_dropdown.php';
     <input type="hidden" name="username" id="deleteUsername">
 </form>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script>
 const rolePresets = <?= json_encode($rolePresets) ?>;
 let userModal;

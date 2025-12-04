@@ -300,7 +300,7 @@ function renderLogin(string $brand, string $title, ?string $error): void
         <title><?= htmlspecialchars($title) ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
     <body class="login-body">
@@ -445,7 +445,7 @@ if (!empty($savedOrder)) {
     <title><?= htmlspecialchars($appName) ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -642,7 +642,7 @@ if (isset($_SESSION['upload_error'])) {
     <input type="hidden" name="delete_file" id="deleteFileName">
 </form>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script>
 function confirmDelete(fileName) {
     if (confirm('Datei "' + fileName + '" wirklich löschen?')) {

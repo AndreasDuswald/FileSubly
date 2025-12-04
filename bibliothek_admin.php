@@ -129,7 +129,7 @@ if ($selectedSlug) {
     <meta charset="utf-8">
     <title>Bibliotheken verwalten - <?= htmlspecialchars($appName) ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/bibliothek.css" rel="stylesheet">
 </head>
@@ -367,7 +367,7 @@ foreach ($commonTypes as $type):
     <input type="hidden" name="slug" id="deleteSlug">
 </form>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script>
 function deleteLibrary(slug) {
     if (confirm('Bibliothek "' + slug + '" wirklich löschen? Alle Dateien gehen verloren!')) {

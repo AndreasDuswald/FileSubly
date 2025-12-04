@@ -122,7 +122,7 @@ $permissionLabels = [
     <meta charset="utf-8">
     <title>Mein Profil - <?= htmlspecialchars($appName) ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -299,7 +299,7 @@ $permissionLabels = [
 
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script>
 function togglePassword(fieldId) {
     const field = document.getElementById(fieldId);
