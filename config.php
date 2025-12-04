@@ -1,9 +1,9 @@
-﻿<?php
+<?php
 
 declare(strict_types=1);
 
 /**
- * Zentrale Konfiguration fÃ¼r den Duswald Download-Service.
+ * Zentrale Konfiguration fü¼r den Duswald Download-Service.
  */
 
 // Load settings from JSON file
@@ -52,7 +52,7 @@ $config = [
     // Erlaubte Dateiendungen (aus Settings)
     'allowed_extensions' => $settings['allowed_extensions'],
 
-    // Maximale DateigrÃ¶ÃŸe in MB
+    // Maximale Dateigrü¶üŸe in MB
     'max_file_size_mb' => $settings['max_file_size_mb'],
 
     // User-Datei
@@ -96,7 +96,7 @@ function getFallbackUsers(): array
             'role' => 'admin',
             'permissions' => ['download', 'upload', 'delete', 'sort', 'merge', 'manage_users'],
             'email' => '',
-            'is_fallback' => true // Marker fÃ¼r Fallback-User
+            'is_fallback' => true // Marker fü¼r Fallback-User
         ]
     ];
 }
@@ -211,7 +211,7 @@ function logDownload(string $filename, string $username): void
         'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown'
     ];
 
-    // Nur die letzten 1000 EintrÃ¤ge behalten
+    // Nur die letzten 1000 Eintrü¤ge behalten
     if (count($logs) > 1000) {
         $logs = array_slice($logs, -1000);
     }
@@ -252,7 +252,7 @@ function getDownloadStats(): array
 }
 
 /**
- * Icon-Funktion (SVGs fÃ¼r Dateitypen)
+ * Icon-Funktion (SVGs fü¼r Dateitypen)
  */
 function fileIcon(string $ext): string
 {
@@ -291,7 +291,7 @@ function fileIcon(string $ext): string
 function generateResetToken(string $username): string
 {
     $token = bin2hex(random_bytes(32));
-    $expiry = time() + (3600); // 1 Stunde gÃ¼ltig
+    $expiry = time() + (3600); // 1 Stunde gü¼ltig
 
     $resetTokens = [];
     $tokenFile = __DIR__ . '/password_reset_tokens.json';
@@ -300,7 +300,7 @@ function generateResetToken(string $username): string
         $resetTokens = json_decode(file_get_contents($tokenFile), true) ?? [];
     }
 
-    // Alte Tokens lÃ¶schen
+    // Alte Tokens lü¶schen
     foreach ($resetTokens as $key => $data) {
         if ($data['expiry'] < time()) {
             unset($resetTokens[$key]);
@@ -372,18 +372,18 @@ function sendPasswordResetEmail(string $email, string $username, string $token):
     $settings = loadSettings();
     $appName = $settings['app_name'];
 
-    // Reset-Link generieren (HTTPS verwenden wenn verfÃ¼gbar)
+    // Reset-Link generieren (HTTPS verwenden wenn verfü¼gbar)
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://';
     $resetLink = $protocol . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . "/reset_password.php?token=" . urlencode($token);
 
-    $subject = "[$appName] Passwort zurÃ¼cksetzen";
+    $subject = "[$appName] Passwort zurü¼cksetzen";
     $message = "Hallo $username,\n\n";
-    $message .= "Du hast eine Passwort-ZurÃ¼cksetzung angefordert.\n\n";
-    $message .= "Klicke auf folgenden Link, um dein Passwort zurÃ¼ckzusetzen:\n";
+    $message .= "Du hast eine Passwort-Zurü¼cksetzung angefordert.\n\n";
+    $message .= "Klicke auf folgenden Link, um dein Passwort zurü¼ckzusetzen:\n";
     $message .= "$resetLink\n\n";
-    $message .= "Der Link ist 1 Stunde gÃ¼ltig.\n\n";
+    $message .= "Der Link ist 1 Stunde gü¼ltig.\n\n";
     $message .= "Falls du diese Anfrage nicht gestellt hast, ignoriere diese E-Mail.\n\n";
-    $message .= "GrÃ¼ÃŸe,\n$appName Team";
+    $message .= "Grü¼üŸe,\n$appName Team";
 
     // Absender: sender_email aus Settings, sonst noreply@domain
     $fromEmail = $settings['sender_email'] ?: ("noreply@" . $_SERVER['HTTP_HOST']);
@@ -466,3 +466,4 @@ function renderFooter(): void
     echo ' | Lizenz: MIT';
     echo '</footer>';
 }
+
