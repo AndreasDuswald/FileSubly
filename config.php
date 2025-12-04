@@ -13,7 +13,7 @@ function loadSettings(): array
 
     // Default settings
     $defaults = [
-        'app_name' => 'AD - FileSubly 1.0.2',
+        'app_name' => 'AD - FileSubly 1.0.3',
         'brand_name' => 'Download-Service',
         'allowed_extensions' => ['pdf', 'xlsx', 'xlsm', 'doc', 'docx'],
         'max_file_size_mb' => 50
@@ -442,11 +442,11 @@ function loadAccessRequests(): array
 function getAppVersion(): string
 {
     $versionFile = __DIR__ . '/VERSION';
-    
+
     if (file_exists($versionFile)) {
         return trim(file_get_contents($versionFile));
     }
-    
+
     return '1.0.0'; // Fallback
 }
 
@@ -458,7 +458,7 @@ function renderFooter(): void
     $appName = $GLOBALS['config']['app_name'] ?? 'FileSubly';
     $version = getAppVersion();
     $year = date('Y');
-    
+
     echo '<footer class="py-3 mt-5 text-center text-muted footer-default">';
     echo htmlspecialchars($appName) . ' v' . htmlspecialchars($version);
     echo ' &copy; Andreas Duswald ' . $year . ' | ';
@@ -466,4 +466,3 @@ function renderFooter(): void
     echo ' | Lizenz: MIT';
     echo '</footer>';
 }
-

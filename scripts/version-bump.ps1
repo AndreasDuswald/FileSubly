@@ -2,11 +2,11 @@
 # Usage: powershell -ExecutionPolicy Bypass -File .\scripts\version-bump.ps1 -BumpType [patch|minor|major] -CommitMessage "Your message"
 
 param(
-    [Parameter(Mandatory=$true)]
-    [ValidateSet('patch','minor','major')]
+    [Parameter(Mandatory = $true)]
+    [ValidateSet('patch', 'minor', 'major')]
     [string]$BumpType,
     
-    [Parameter(Mandatory=$true)]
+    [Parameter(Mandatory = $true)]
     [string]$CommitMessage
 )
 
@@ -41,7 +41,8 @@ if ($currentVersion -match '^(\d+)\.(\d+)\.(\d+)') {
     $major = [int]$matches[1]
     $minor = [int]$matches[2]
     $patch = [int]$matches[3]
-} else {
+}
+else {
     Write-Host "[ERROR] Invalid VERSION format: $currentVersion" -ForegroundColor Red
     exit 1
 }
@@ -73,22 +74,22 @@ $newVersion = "$major.$minor.$patch"
 Write-Host "[SUCCESS] New Version: $newVersion" -ForegroundColor Green
 
 # 5. Update VERSION-Datei (ohne Git-Hash, kommt später)
-$newVersion | Out-File -FilePath "VERSION" -NoNewline -Encoding UTF8
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText("$PWD\VERSION", $newVersion, $utf8NoBom)
 
 # 6. Update config.php Default-Settings
-$configPath = "config.php"
+$configPath = "$PWD\config.php"
 if (Test-Path $configPath) {
-    $configContent = Get-Content $configPath -Raw
+    $configContent = [System.IO.File]::ReadAllText($configPath, [System.Text.Encoding]::UTF8)
     $pattern = "('app_name'\s*=>\s*'AD - FileSubly )[\d\.]+(')";
     $replacement = "`${1}$newVersion`${2}"
     $configContent = $configContent -replace $pattern, $replacement
-    # Use Set-Content to preserve file encoding and line endings
-    Set-Content -Path $configPath -Value $configContent -NoNewline -Encoding UTF8
+    [System.IO.File]::WriteAllText($configPath, $configContent, $utf8NoBom)
     Write-Host "[SUCCESS] Updated config.php app_name" -ForegroundColor Green
 }
 
 # 7. Update CHANGELOG.md
-$changelogPath = "CHANGELOG.md"
+$changelogPath = "$PWD\CHANGELOG.md"
 $date = Get-Date -Format "yyyy-MM-dd"
 $changelogEntry = @"
 
@@ -100,14 +101,15 @@ $changelogEntry = @"
 "@
 
 if (Test-Path $changelogPath) {
-    $changelog = Get-Content $changelogPath -Raw
+    $changelog = [System.IO.File]::ReadAllText($changelogPath, [System.Text.Encoding]::UTF8)
     $headerPattern = '(# .+?\r?\n\r?\n)'
     if ($changelog -match $headerPattern) {
         $changelog = $changelog -replace $headerPattern, "`$1$changelogEntry"
-        $changelog | Out-File -FilePath $changelogPath -NoNewline -Encoding UTF8
+        [System.IO.File]::WriteAllText($changelogPath, $changelog, $utf8NoBom)
         Write-Host "[SUCCESS] Updated CHANGELOG.md" -ForegroundColor Green
     }
-} else {
+}
+else {
     Write-Host "[WARNING] CHANGELOG.md not found, skipping..." -ForegroundColor Yellow
 }
 
@@ -129,7 +131,8 @@ $versionWithHash = "$newVersion+git.$gitHash"
 Write-Host "[INFO] Git Hash: $gitHash" -ForegroundColor Cyan
 
 # 11. Update VERSION mit Git-Hash
-$versionWithHash | Out-File -FilePath "VERSION" -NoNewline -Encoding UTF8
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText("$PWD\VERSION", $versionWithHash, $utf8NoBom)
 Write-Host "[SUCCESS] Updated VERSION with git hash: $versionWithHash" -ForegroundColor Green
 
 # 12. Stage VERSION und amend commit
