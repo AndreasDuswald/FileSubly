@@ -79,9 +79,11 @@ $newVersion | Out-File -FilePath "VERSION" -NoNewline -Encoding UTF8
 $configPath = "config.php"
 if (Test-Path $configPath) {
     $configContent = Get-Content $configPath -Raw
-    $pattern = "('app_name' => 'AD - FileSubly )[\d\.]+(')";
-    $configContent = $configContent -replace $pattern, "`$1$newVersion`$2"
-    $configContent | Out-File -FilePath $configPath -NoNewline -Encoding UTF8
+    $pattern = "('app_name'\s*=>\s*'AD - FileSubly )[\d\.]+(')";
+    $replacement = "`${1}$newVersion`${2}"
+    $configContent = $configContent -replace $pattern, $replacement
+    # Use Set-Content to preserve file encoding and line endings
+    Set-Content -Path $configPath -Value $configContent -NoNewline -Encoding UTF8
     Write-Host "[SUCCESS] Updated config.php app_name" -ForegroundColor Green
 }
 
