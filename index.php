@@ -791,11 +791,15 @@ function downloadFile(filename) {
     iframe.src = 'download.php?file=' + encodeURIComponent(filename);
     document.body.appendChild(iframe);
     
-    // Overlay nach 2 Sekunden ausblenden (Download startet)
+    // Overlay ausblenden sobald Download startet
     setTimeout(() => {
         hideLoading();
+    }, 1500);
+    
+    // iframe nach Download entfernen (erst nach 10 Sekunden)
+    setTimeout(() => {
         iframe.remove();
-    }, 2000);
+    }, 10000);
 }
 
 // Helper-Funktionen für Loading-Overlay
