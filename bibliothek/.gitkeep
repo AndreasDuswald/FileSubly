@@ -1,0 +1,4 @@
+# Platzhalter-Datei
+# Dieser Ordner enthält Bibliotheken mit Dokumenten.
+# Die Bibliotheken und deren Inhalte werden nicht ins Git-Repository aufgenommen (.gitignore).
+# Siehe bibliothek/.config.example.json für die Struktur einer Bibliothek-Konfiguration.

@@ -1,0 +1,30 @@
+{
+    "display_name": "Beispiel Bibliothek",
+    "description": "Eine Beispiel-Bibliothek für Dokumente",
+    "allowed_extensions": [
+        "pdf",
+        "docx",
+        "xlsx",
+        "xlsm",
+        "jpg",
+        "png"
+    ],
+    "max_size_mb": 50,
+    "permissions": {
+        "admin": [
+            "download",
+            "upload",
+            "delete",
+            "sort",
+            "merge"
+        ],
+        "user1": [
+            "download",
+            "sort",
+            "merge"
+        ],
+        "user2": [
+            "download"
+        ]
+    }
+}

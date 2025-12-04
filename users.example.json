@@ -1,0 +1,29 @@
+{
+    "admin": {
+        "password": "$2y$10$abcdefghijklmnopqrstuv.yzABCDEFGHIJKLMNOPQRSTUVWXYZ012",
+        "permissions": [
+            "upload",
+            "download",
+            "delete",
+            "sort",
+            "merge",
+            "manage_users",
+            "manage_access_requests",
+            "view_statistics"
+        ]
+    },
+    "user1": {
+        "password": "$2y$10$exampleHashForUser1.DoNotUseInProduction123456789",
+        "permissions": [
+            "download",
+            "sort",
+            "merge"
+        ]
+    },
+    "user2": {
+        "password": "$2y$10$exampleHashForUser2.DoNotUseInProduction123456789",
+        "permissions": [
+            "download"
+        ]
+    }
+}

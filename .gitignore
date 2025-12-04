@@ -1,0 +1,92 @@
+# ========================================
+# FileSubly - Git Ignore
+# ========================================
+
+# Sensible Benutzerdaten
+users.json
+users.json.backup
+access_requests.json
+
+# Settings (können angepasste Werte enthalten)
+settings.json
+
+# Version-Tracking (VERSION mit Git-Hash wird bei jedem Commit aktualisiert)
+# Bleibt NICHT im Repo, da es bei jedem Commit einen neuen Hash bekommt
+# VERSION
+
+# Hochgeladene Dateien (Download-Ordner) - NUR .gitkeep erlaubt
+files/*
+!files/.gitkeep
+
+# Bibliothek-Ordner - NUR .gitkeep und .example-Files erlaubt
+bibliothek/*
+!bibliothek/.gitkeep
+!bibliothek/.config.example.json
+
+# Alle Bibliothek-Unterordner und deren Inhalte (enthalten sensible Daten)
+bibliothek/*/
+
+# Download-Statistiken und Sortierung (können Dateinamen enthalten)
+.download_stats.json
+.sort_order.json
+
+# PHP temporäre Dateien
+*.tmp
+*.cache
+
+# Session-Dateien (falls lokal gespeichert)
+sessions/*
+
+# Backup-Dateien
+*.bak
+*.backup
+*~
+
+# Logs
+*.log
+logs/*
+
+# IDE / Editor Dateien
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Composer Dependencies (falls später verwendet)
+/vendor/
+composer.lock
+
+# NPM Dependencies (falls später verwendet)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Umgebungsvariablen (falls config.php ausgelagert wird)
+.env
+.env.local
+.env.production
+
+# PHP-spezifisch
+*.php.cache
+__pycache__/
+*.py[cod]
+
+# Betriebssystem
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# XAMPP-spezifisch (falls versehentlich im Repo)
+php_error.log
+error.log
+access.log

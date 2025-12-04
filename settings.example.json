@@ -1,0 +1,17 @@
+{
+    "app_name": "AD - FileSubly 1.0",
+    "brand_name": "Download-Service",
+    "allowed_extensions": [
+        "pdf",
+        "xlsx",
+        "xlsm",
+        "doc",
+        "docx",
+        "txt",
+        "csv",
+        "zip"
+    ],
+    "max_file_size_mb": 50,
+    "enable_password_reset": true,
+    "enable_access_request": true
+}
