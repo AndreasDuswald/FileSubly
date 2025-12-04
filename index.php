@@ -699,14 +699,23 @@ function saveOrder() {
     const rows = fileTable.querySelectorAll('tr.draggable-row');
     const order = Array.from(rows).map(row => row.dataset.filename);
     
-    fetch(window.location.href, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
-        },
-        body: 'save_order=' + encodeURIComponent(JSON.stringify(order))
+    const formData = new FormData();
+    formData.append('csrf_token', '<?= generateCsrfToken() ?>');
+    order.forEach((filename, index) => {
+        formData.append('order[]', filename);
     });
+    
+    fetch('save_sort_order.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (!data.success) {
+            console.error('Sortierung speichern fehlgeschlagen:', data.error);
+        }
+    })
+    .catch(error => console.error('Fehler beim Speichern:', error));
 }
 
 // PDF Selection & Merge
