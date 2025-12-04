@@ -1,16 +1,36 @@
 # FileSubly - Version History
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -19,16 +39,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -38,16 +78,36 @@
 ## [1.0.0] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -56,16 +116,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -75,16 +155,36 @@
 ### ðŸŽ‰ Erstes stabiles Release
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -93,16 +193,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -114,16 +234,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### âœ¨ Features
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -132,16 +272,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -193,16 +353,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“š Dokumentation
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -211,16 +391,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -236,16 +436,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ”§ Technisches
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -254,16 +474,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -280,16 +520,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“¦ Deployment
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -298,16 +558,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -324,16 +604,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## ZukÃ¼nftige Versionen
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -342,16 +642,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -361,16 +681,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [1.1.0] - Geplant
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -379,16 +719,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -403,16 +763,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [2.0.0] - Geplant
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes
@@ -421,16 +801,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 
 ## [1.0.2] - 2025-12-04
 
 
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
+
 ## [1.0.3] - 2025-12-04
 
+
+## [1.0.4] - 2025-12-04
+
+### Changes
+- feat: Add version info button in login and update GitHub links to /tree/master
 ### Changes
 - fix: Use UTF-8 without BOM in version-bump script to prevent PHP errors
 ### Changes

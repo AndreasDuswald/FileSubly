@@ -343,6 +343,13 @@ function renderLogin(string $brand, string $title, ?string $error): void
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
+            
+            <div class="mt-3 text-center">
+                <small class="text-muted">
+                    <?= htmlspecialchars($title) ?> v<?= htmlspecialchars(getAppVersion()) ?> | 
+                    <a href="https://github.com/AndreasDuswald/FileSubly/tree/master" target="_blank" rel="noopener" class="text-muted">ℹ️ Info</a>
+                </small>
+            </div>
         </div>
     </div>
 
