@@ -988,9 +988,7 @@ function showShortcutsHelp() {
 }
 </style>
 
-<footer class="py-3 mt-5 text-center text-muted footer-default">
-    <?= htmlspecialchars($appName) ?> © Andreas Duswald 2025 | Lizenz: MIT
-</footer>
+<?php renderFooter(); ?>
 
 </body>
 </html>

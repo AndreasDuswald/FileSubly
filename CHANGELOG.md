@@ -1,22 +1,52 @@
 ﻿# FileSubly - Version History
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 ## [1.0.0] - 2025-12-04
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 ### ðŸŽ‰ Erstes stabiles Release
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliotheks-Modul.
@@ -24,8 +54,18 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### âœ¨ Features
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 **Sicherheit:**
@@ -73,8 +113,18 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“š Dokumentation
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 - README.md - Ãœbersicht und Schnellstart
@@ -86,8 +136,18 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ”§ Technisches
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 - PHP 7.4+ KompatibilitÃ¤t
@@ -100,8 +160,18 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“¦ Deployment
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 - .gitignore fÃ¼r sensible Daten
@@ -114,15 +184,35 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## ZukÃ¼nftige Versionen
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 ### [1.1.0] - Geplant
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 - Bibliothek-Zugriff fÃ¼r normale User (nicht nur Admins)
@@ -133,8 +223,18 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [2.0.0] - Geplant
 
 
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
+
 ## [1.0.1] - 2025-12-04
 
+
+## [1.0.2] - 2025-12-04
+
+### Changes
+- feat: Dynamic footer with version from VERSION file and GitHub link
 ### Changes
 - Initial Release - FileSubly 1.0
 - OOP-Refaktorierung des Hauptsystems

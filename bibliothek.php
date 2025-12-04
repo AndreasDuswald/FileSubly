@@ -755,9 +755,7 @@ function confirmMerge() {
 <?php endif; ?>
 </script>
 
-<footer class="py-3 mt-5 text-center text-muted footer-default">
-    <?= htmlspecialchars($appName) ?> © 2025 | Lizenz: MIT
-</footer>
+<?php renderFooter(); ?>
 
 </body>
 </html>

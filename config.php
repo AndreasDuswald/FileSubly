@@ -435,3 +435,34 @@ function loadAccessRequests(): array
 
     return json_decode(file_get_contents($requestFile), true) ?? [];
 }
+
+/**
+ * Get application version from VERSION file
+ */
+function getAppVersion(): string
+{
+    $versionFile = __DIR__ . '/VERSION';
+    
+    if (file_exists($versionFile)) {
+        return trim(file_get_contents($versionFile));
+    }
+    
+    return '1.0.0'; // Fallback
+}
+
+/**
+ * Render application footer with version and GitHub link
+ */
+function renderFooter(): void
+{
+    $appName = $GLOBALS['config']['app_name'] ?? 'FileSubly';
+    $version = getAppVersion();
+    $year = date('Y');
+    
+    echo '<footer class="py-3 mt-5 text-center text-muted footer-default">';
+    echo htmlspecialchars($appName) . ' v' . htmlspecialchars($version);
+    echo ' &copy; Andreas Duswald ' . $year . ' | ';
+    echo '<a href="https://github.com/AndreasDuswald/FileSubly" target="_blank" rel="noopener" class="text-muted">GitHub</a>';
+    echo ' | Lizenz: MIT';
+    echo '</footer>';
+}

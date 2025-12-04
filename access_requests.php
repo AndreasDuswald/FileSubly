@@ -368,9 +368,7 @@ include __DIR__ . '/includes/user_dropdown.php';
 
 </main>
 
-<footer class="py-3 mt-5 text-center text-muted footer-default">
-    <?= htmlspecialchars($appName) ?> © 2025 | Lizenz: MIT
-</footer>
+<?php renderFooter(); ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
