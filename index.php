@@ -573,11 +573,11 @@ if (isset($_SESSION['upload_error'])) {
 
                         <td data-label="Aktion" class="text-end">
                             <div class="file-actions">
-                                <a
+                                <button
                                     class="btn btn-primary btn-download"
-                                    href="download.php?file=<?= urlencode($f['name']) ?>"
+                                    onclick="downloadFile('<?= htmlspecialchars($f['name'], ENT_QUOTES) ?>')"
                                     title="Herunterladen"
-                                >📥</a>
+                                >📥</button>
                                 <?php if (hasPermission('delete')): ?>
                                     <button
                                         class="btn btn-danger btn-delete"
@@ -750,7 +750,7 @@ function confirmMerge() {
     const checkboxes = document.querySelectorAll('.pdf-checkbox:checked');
     
     // Loading-Animation anzeigen
-    document.getElementById('loadingOverlay').style.display = 'flex';
+    showLoading('PDFs werden zusammengeführt...');
     
     const form = document.createElement('form');
     form.method = 'POST';
@@ -776,8 +776,36 @@ function confirmMerge() {
     
     // Overlay nach 3 Sekunden automatisch ausblenden (Fallback)
     setTimeout(() => {
-        document.getElementById('loadingOverlay').style.display = 'none';
+        hideLoading();
     }, 3000);
+}
+
+// Download-Funktion mit Feedback
+function downloadFile(filename) {
+    // Loading-Animation anzeigen
+    showLoading('Download wird vorbereitet...');
+    
+    // iframe für Download erstellen (damit Seite nicht neu lädt)
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = 'download.php?file=' + encodeURIComponent(filename);
+    document.body.appendChild(iframe);
+    
+    // Overlay nach 2 Sekunden ausblenden (Download startet)
+    setTimeout(() => {
+        hideLoading();
+        iframe.remove();
+    }, 2000);
+}
+
+// Helper-Funktionen für Loading-Overlay
+function showLoading(text) {
+    document.getElementById('loadingText').textContent = text;
+    document.getElementById('loadingOverlay').style.display = 'flex';
+}
+
+function hideLoading() {
+    document.getElementById('loadingOverlay').style.display = 'none';
 }
 <?php endif; ?>
 
@@ -976,14 +1004,14 @@ function showShortcutsHelp() {
     </div>
 </div>
 
-<!-- Loading Overlay mit Flammy -->
+<!-- Loading Overlay mit Flammy (für Merge und Download) -->
 <div id="loadingOverlay" class="loading-overlay" onclick="this.style.display='none';">
     <div class="loading-content">
         <div class="loading-spinner">
             <div class="loading-ring"></div>
             <img src="assets/flammy.png" alt="Loading" class="loading-logo" onerror="this.src='assets/logo.png';">
         </div>
-        <p class="loading-text">PDFs werden zusammengeführt...</p>
+        <p class="loading-text" id="loadingText">Wird verarbeitet...</p>
         <p class="loading-hint">(Klicke zum Schließen)</p>
     </div>
 </div>
