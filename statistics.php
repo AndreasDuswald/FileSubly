@@ -23,6 +23,7 @@ $brandName = $config['brand_name'];
 
 // Download-Statistiken laden
 $stats = getDownloadStats();
+$lastDownloads = getLastDownloadPerFile();
 $users = loadUsers();
 
 // Sortieren nach Gesamt-Downloads pro User
@@ -70,6 +71,26 @@ include __DIR__ . '/includes/user_dropdown.php';
         <h2>📊 Download-Statistiken</h2>
         <a href="index.php" class="btn btn-secondary">← Zurück</a>
     </div>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs mb-4" id="statsTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab">
+                📈 Übersicht
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="last-downloads-tab" data-bs-toggle="tab" data-bs-target="#last-downloads" type="button" role="tab">
+                🕒 Letzte Downloads
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="statsTabsContent">
+
+        <!-- Übersicht Tab -->
+        <div class="tab-pane fade show active" id="overview" role="tabpanel">
 
     <?php if (empty($stats)): ?>
         <div class="alert alert-info">
@@ -170,6 +191,78 @@ include __DIR__ . '/includes/user_dropdown.php';
         <?php endforeach; ?>
 
     <?php endif; ?>
+
+        </div><!-- End Übersicht Tab -->
+
+        <!-- Letzte Downloads Tab -->
+        <div class="tab-pane fade" id="last-downloads" role="tabpanel">
+            <?php if (empty($lastDownloads)): ?>
+                <div class="alert alert-info">
+                    Noch keine Downloads aufgezeichnet.
+                </div>
+            <?php else: ?>
+                <div class="card">
+                    <div class="card-header">
+                        <strong>📄 Letzte Downloads pro Datei und User</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Datei</th>
+                                        <th>Benutzer</th>
+                                        <th>Letzter Download</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    // Sortiere Dateien alphabetisch
+                                    ksort($lastDownloads);
+                foreach ($lastDownloads as $filename => $userDownloads):
+                    // Sortiere User nach Zeitstempel (neueste zuerst)
+                    uasort($userDownloads, function ($a, $b) {
+                        return $b['timestamp'] <=> $a['timestamp'];
+                    });
+                    $rowspan = count($userDownloads);
+                    $firstRow = true;
+                    foreach ($userDownloads as $username => $downloadInfo):
+                        ?>
+                                    <tr>
+                                        <?php if ($firstRow): ?>
+                                            <td rowspan="<?= $rowspan ?>" class="align-middle">
+                                                <strong>📄 <?= htmlspecialchars($filename) ?></strong>
+                                            </td>
+                                        <?php endif; ?>
+                                        <td>
+                                            <?php
+                                $userRole = $users[$username]['role'] ?? 'user';
+                        $roleIcon = match($userRole) {
+                            'admin' => '👑',
+                            'helper' => '⭐',
+                            default => '👤'
+                        };
+                        ?>
+                                            <?= $roleIcon ?> <?= htmlspecialchars($username) ?>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-info"><?= htmlspecialchars($downloadInfo['date']) ?> Uhr</span>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                        $firstRow = false;
+                    endforeach;
+                endforeach;
+?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+        </div><!-- End Letzte Downloads Tab -->
+
+    </div><!-- End Tab Content -->
 
 </main>
 

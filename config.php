@@ -13,7 +13,7 @@ function loadSettings(): array
 
     // Default settings
     $defaults = [
-        'app_name' => 'AD - FileSubly 1.3.0',
+        'app_name' => 'AD - FileSubly 1.3.1',
         'brand_name' => 'Download-Service',
         'allowed_extensions' => ['pdf', 'xlsx', 'xlsm', 'doc', 'docx'],
         'max_file_size_mb' => 50
@@ -249,6 +249,44 @@ function getDownloadStats(): array
     }
 
     return $stats;
+}
+
+/**
+ * Gibt den letzten Download pro Datei für jeden User zurück
+ * Format: ['filename' => ['username' => ['timestamp' => '...', 'date' => '...']]]
+ */
+function getLastDownloadPerFile(): array
+{
+    global $config;
+    $logFile = $config['download_dir'] . '/.download_log.json';
+
+    if (!file_exists($logFile)) {
+        return [];
+    }
+
+    $logs = json_decode(file_get_contents($logFile), true) ?? [];
+
+    // Gruppieren: pro Datei => pro User => letzter Zeitstempel
+    $lastDownloads = [];
+    foreach ($logs as $log) {
+        $file = $log['filename'];
+        $user = $log['username'];
+        $timestamp = $log['timestamp'];
+
+        if (!isset($lastDownloads[$file])) {
+            $lastDownloads[$file] = [];
+        }
+
+        // Nur den neuesten Zeitstempel behalten
+        if (!isset($lastDownloads[$file][$user]) || $timestamp > $lastDownloads[$file][$user]['timestamp']) {
+            $lastDownloads[$file][$user] = [
+                'timestamp' => $timestamp,
+                'date' => date('d.m.Y H:i', strtotime($timestamp))
+            ];
+        }
+    }
+
+    return $lastDownloads;
 }
 
 /**
