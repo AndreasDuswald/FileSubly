@@ -30,6 +30,10 @@ bibliothek/*/
 .download_stats.json
 .sort_order.json
 .file_priorities.json
+.custom_lists.json
+
+# TCPDF Bibliothek (externe Dependency)
+lib/tcpdf/
 
 # PHP temporäre Dateien
 *.tmp

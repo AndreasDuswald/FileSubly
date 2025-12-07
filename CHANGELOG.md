@@ -1,16 +1,96 @@
 # FileSubly - Version History
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
+## [1.3.0] - 2025-12-07
+
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+### Added
+- **Custom Todo/Info Lists System**
+  - Tab navigation with "Documents" as default tab plus custom lists
+  - Admin users can create unlimited custom lists via ➕ button
+  - Each list has checkbox column (Erledigt), priority column (Prio), and custom content columns
+  - Inline editing: Double-click cells to edit text, click priority to change (0-3)
+  - Visual priority highlighting with colored rows (red/yellow/blue) in web view
+  - Add/delete rows with confirmation dialogs
+  - Delete entire lists with confirmation
+  - Tab persistence: Page stays on active list after any operation (add/edit/delete)
+  - Permission-based UI: Admins see edit controls, regular users only see checkboxes
+
+- **PDF Export for Custom Lists**
+  - 📄 PDF button on each custom list
+  - Professional A4 layout with full-width table utilization
+  - Clean design optimized for grayscale printing
+  - Automatic file saving to `files/` directory with Priority 1
+  - Filename generated from list title (e.g., "Bestellliste_Neu_Ulm.pdf")
+  - Overwrites existing PDFs without prompting
+  - Modern styling with alternating row colors and proper spacing
+  - Uses TCPDF library for native PDF generation
+
+- **Backend Infrastructure**
+  - `save_custom_list.php`: Full CRUD API with 7 actions (create_tab, add_row, toggle_checkbox, edit_cell, edit_priority, delete_row, delete_list)
+  - `download_list_pdf.php`: PDF generation with TCPDF native methods (Cell/MultiCell)
+  - `.custom_lists.json`: JSON storage for all custom lists data
+  - CSRF protection on all AJAX endpoints
+  - Permission checks: `manage_users` required for admin operations
+
+- **TCPDF Integration**
+  - Installed TCPDF 6.7.5 library in `lib/tcpdf/`
+  - Custom PDF layout without default headers/footers
+  - Automatic text wrapping in cells
+  - Configurable column widths (Checkbox: 20mm, Prio: 15mm, Text: 145mm)
+
+### Changed
+- Updated `.gitignore` to exclude `lib/tcpdf/` and `.custom_lists.json`
+- Modified `index.php` to replace "Dokumente" header with Bootstrap tab navigation (~300 lines added)
+- Enhanced inline editing with hover effects and ESC to cancel
+
+### Fixed
+- JavaScript syntax error (removed orphaned alert code after PDF download function)
+- Tab persistence: Users now stay on active list after reload/operations
+- PDF checkbox rendering: Changed from Unicode symbols to `[ ]` for better print quality
+
+### Technical Details
+- **Data Structure**: JSON with tabs array, each tab containing id, title, columns, and rows
+- **URL Parameters**: `?tab=list_id` for tab state persistence
+- **Inline Editing**: contenteditable approach with input/select elements on demand
+- **Priority Colors**: Reused existing CSS classes from file priority feature
+- **Bootstrap Integration**: nav-tabs and tab-panes for UI consistency
+
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -19,16 +99,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -39,16 +139,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -57,16 +177,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -79,16 +219,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -97,16 +257,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -117,16 +297,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -135,16 +335,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -159,16 +379,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -177,16 +417,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -197,16 +457,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -215,16 +495,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -237,16 +537,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -255,16 +575,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -275,16 +615,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -293,16 +653,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -319,16 +699,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -337,16 +737,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -357,16 +777,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -375,16 +815,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -397,16 +857,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -415,16 +895,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -435,16 +935,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -453,16 +973,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -477,16 +1017,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -495,16 +1055,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -515,16 +1095,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -533,16 +1133,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -555,16 +1175,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -573,16 +1213,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -593,16 +1253,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -611,16 +1291,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -639,16 +1339,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -657,16 +1377,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -677,16 +1417,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -695,16 +1455,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -717,16 +1497,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -735,16 +1535,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -755,16 +1575,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -773,16 +1613,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -797,16 +1657,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -815,16 +1695,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -835,16 +1735,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -853,16 +1773,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -875,16 +1815,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -893,16 +1853,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -913,16 +1893,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -931,16 +1931,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -957,16 +1977,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -975,16 +2015,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -995,16 +2055,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1013,16 +2093,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1035,16 +2135,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1053,16 +2173,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1073,16 +2213,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1091,16 +2251,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1115,16 +2295,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1133,16 +2333,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1153,16 +2373,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1171,16 +2411,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1193,16 +2453,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1211,16 +2491,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1231,16 +2531,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1249,16 +2569,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1278,16 +2618,36 @@
 ## [1.0.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1296,16 +2656,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1316,16 +2696,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1334,16 +2734,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1356,16 +2776,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1374,16 +2814,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1394,16 +2854,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1412,16 +2892,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1436,16 +2936,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1454,16 +2974,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1474,16 +3014,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1492,16 +3052,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1514,16 +3094,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1532,16 +3132,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1552,16 +3172,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1570,16 +3210,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1596,16 +3256,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1614,16 +3294,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1634,16 +3334,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1652,16 +3372,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1674,16 +3414,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1692,16 +3452,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1712,16 +3492,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1730,16 +3530,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1754,16 +3574,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1772,16 +3612,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1792,16 +3652,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1810,16 +3690,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1832,16 +3732,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1850,16 +3770,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1870,16 +3810,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1888,16 +3848,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1916,16 +3896,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1934,16 +3934,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1954,16 +3974,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1972,16 +4012,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -1994,16 +4054,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2012,16 +4092,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2032,16 +4132,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2050,16 +4170,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2074,16 +4214,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2092,16 +4252,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2112,16 +4292,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2130,16 +4330,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2152,16 +4372,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2170,16 +4410,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2190,16 +4450,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2208,16 +4488,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2234,16 +4534,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2252,16 +4572,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2272,16 +4612,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2290,16 +4650,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2312,16 +4692,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2330,16 +4730,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2350,16 +4770,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2368,16 +4808,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2392,16 +4852,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2410,16 +4890,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2430,16 +4930,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2448,16 +4968,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2470,16 +5010,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2488,16 +5048,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2508,16 +5088,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2526,16 +5126,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2555,16 +5175,36 @@
 ### ðŸŽ‰ Erstes stabiles Release
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2573,16 +5213,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2593,16 +5253,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2611,16 +5291,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2633,16 +5333,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2651,16 +5371,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2671,16 +5411,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2689,16 +5449,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2713,16 +5493,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2731,16 +5531,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2751,16 +5571,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2769,16 +5609,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2791,16 +5651,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2809,16 +5689,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2829,16 +5729,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2847,16 +5767,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2873,16 +5813,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2891,16 +5851,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2911,16 +5891,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2929,16 +5929,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2951,16 +5971,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2969,16 +6009,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -2989,16 +6049,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3007,16 +6087,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3031,16 +6131,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3049,16 +6169,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3069,16 +6209,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3087,16 +6247,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3109,16 +6289,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3127,16 +6327,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3147,16 +6367,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3165,16 +6405,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3193,16 +6453,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3211,16 +6491,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3231,16 +6531,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3249,16 +6569,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3271,16 +6611,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3289,16 +6649,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3309,16 +6689,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3327,16 +6727,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3351,16 +6771,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3369,16 +6809,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3389,16 +6849,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3407,16 +6887,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3429,16 +6929,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3447,16 +6967,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3467,16 +7007,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3485,16 +7045,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3511,16 +7091,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3529,16 +7129,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3549,16 +7169,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3567,16 +7207,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3589,16 +7249,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3607,16 +7287,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3627,16 +7327,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3645,16 +7365,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3669,16 +7409,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3687,16 +7447,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3707,16 +7487,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3725,16 +7525,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3747,16 +7567,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3765,16 +7605,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3785,16 +7645,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3803,16 +7683,36 @@
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3834,16 +7734,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### âœ¨ Features
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3852,16 +7772,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3872,16 +7812,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3890,16 +7850,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3912,16 +7892,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3930,16 +7930,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3950,16 +7970,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3968,16 +8008,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -3992,16 +8052,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4010,16 +8090,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4030,16 +8130,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4048,16 +8168,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4070,16 +8210,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4088,16 +8248,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4108,16 +8288,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4126,16 +8326,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4152,16 +8372,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4170,16 +8410,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4190,16 +8450,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4208,16 +8488,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4230,16 +8530,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4248,16 +8568,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4268,16 +8608,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4286,16 +8646,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4310,16 +8690,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4328,16 +8728,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4348,16 +8768,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4366,16 +8806,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4388,16 +8848,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4406,16 +8886,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4426,16 +8926,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4444,16 +8964,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4472,16 +9012,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4490,16 +9050,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4510,16 +9090,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4528,16 +9128,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4550,16 +9170,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4568,16 +9208,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4588,16 +9248,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4606,16 +9286,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4630,16 +9330,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4648,16 +9368,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4668,16 +9408,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4686,16 +9446,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4708,16 +9488,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4726,16 +9526,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4746,16 +9566,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4764,16 +9604,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4790,16 +9650,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4808,16 +9688,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4828,16 +9728,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4846,16 +9766,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4868,16 +9808,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4886,16 +9846,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4906,16 +9886,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4924,16 +9924,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4948,16 +9968,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4966,16 +10006,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -4986,16 +10046,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5004,16 +10084,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5026,16 +10126,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5044,16 +10164,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5064,16 +10204,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5082,16 +10242,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5153,16 +10333,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“š Dokumentation
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5171,16 +10371,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5191,16 +10411,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5209,16 +10449,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5231,16 +10491,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5249,16 +10529,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5269,16 +10569,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5287,16 +10607,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5311,16 +10651,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5329,16 +10689,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5349,16 +10729,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5367,16 +10767,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5389,16 +10809,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5407,16 +10847,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5427,16 +10887,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5445,16 +10925,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5471,16 +10971,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5489,16 +11009,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5509,16 +11049,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5527,16 +11087,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5549,16 +11129,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5567,16 +11167,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5587,16 +11207,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5605,16 +11245,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5629,16 +11289,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5647,16 +11327,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5667,16 +11367,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5685,16 +11405,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5707,16 +11447,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5725,16 +11485,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5745,16 +11525,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5763,16 +11563,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5791,16 +11611,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5809,16 +11649,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5829,16 +11689,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5847,16 +11727,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5869,16 +11769,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5887,16 +11807,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5907,16 +11847,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5925,16 +11885,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5949,16 +11929,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5967,16 +11967,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -5987,16 +12007,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6005,16 +12045,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6027,16 +12087,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6045,16 +12125,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6065,16 +12165,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6083,16 +12203,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6109,16 +12249,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6127,16 +12287,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6147,16 +12327,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6165,16 +12365,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6187,16 +12407,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6205,16 +12445,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6225,16 +12485,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6243,16 +12523,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6267,16 +12567,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6285,16 +12605,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6305,16 +12645,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6323,16 +12683,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6345,16 +12725,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6363,16 +12763,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6383,16 +12803,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6401,16 +12841,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6436,16 +12896,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ”§ Technisches
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6454,16 +12934,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6474,16 +12974,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6492,16 +13012,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6514,16 +13054,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6532,16 +13092,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6552,16 +13132,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6570,16 +13170,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6594,16 +13214,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6612,16 +13252,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6632,16 +13292,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6650,16 +13330,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6672,16 +13372,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6690,16 +13410,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6710,16 +13450,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6728,16 +13488,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6754,16 +13534,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6772,16 +13572,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6792,16 +13612,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6810,16 +13650,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6832,16 +13692,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6850,16 +13730,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6870,16 +13770,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6888,16 +13808,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6912,16 +13852,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6930,16 +13890,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6950,16 +13930,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6968,16 +13968,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -6990,16 +14010,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7008,16 +14048,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7028,16 +14088,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7046,16 +14126,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7074,16 +14174,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7092,16 +14212,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7112,16 +14252,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7130,16 +14290,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7152,16 +14332,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7170,16 +14370,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7190,16 +14410,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7208,16 +14448,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7232,16 +14492,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7250,16 +14530,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7270,16 +14570,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7288,16 +14608,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7310,16 +14650,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7328,16 +14688,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7348,16 +14728,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7366,16 +14766,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7392,16 +14812,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7410,16 +14850,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7430,16 +14890,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7448,16 +14928,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7470,16 +14970,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7488,16 +15008,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7508,16 +15048,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7526,16 +15086,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7550,16 +15130,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7568,16 +15168,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7588,16 +15208,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7606,16 +15246,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7628,16 +15288,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7646,16 +15326,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7666,16 +15366,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7684,16 +15404,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7720,16 +15460,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“¦ Deployment
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7738,16 +15498,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7758,16 +15538,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7776,16 +15576,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7798,16 +15618,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7816,16 +15656,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7836,16 +15696,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7854,16 +15734,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7878,16 +15778,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7896,16 +15816,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7916,16 +15856,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7934,16 +15894,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7956,16 +15936,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7974,16 +15974,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -7994,16 +16014,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8012,16 +16052,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8038,16 +16098,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8056,16 +16136,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8076,16 +16176,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8094,16 +16214,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8116,16 +16256,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8134,16 +16294,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8154,16 +16334,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8172,16 +16372,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8196,16 +16416,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8214,16 +16454,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8234,16 +16494,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8252,16 +16532,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8274,16 +16574,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8292,16 +16612,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8312,16 +16652,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8330,16 +16690,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8358,16 +16738,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8376,16 +16776,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8396,16 +16816,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8414,16 +16854,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8436,16 +16896,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8454,16 +16934,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8474,16 +16974,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8492,16 +17012,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8516,16 +17056,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8534,16 +17094,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8554,16 +17134,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8572,16 +17172,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8594,16 +17214,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8612,16 +17252,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8632,16 +17292,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8650,16 +17330,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8676,16 +17376,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8694,16 +17414,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8714,16 +17454,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8732,16 +17492,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8754,16 +17534,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8772,16 +17572,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8792,16 +17612,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8810,16 +17650,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8834,16 +17694,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8852,16 +17732,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8872,16 +17772,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8890,16 +17810,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8912,16 +17852,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8930,16 +17890,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8950,16 +17930,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -8968,16 +17968,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9004,16 +18024,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## ZukÃ¼nftige Versionen
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9022,16 +18062,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9042,16 +18102,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9060,16 +18140,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9082,16 +18182,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9100,16 +18220,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9120,16 +18260,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9138,16 +18298,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9162,16 +18342,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9180,16 +18380,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9200,16 +18420,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9218,16 +18458,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9240,16 +18500,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9258,16 +18538,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9278,16 +18578,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9296,16 +18616,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9322,16 +18662,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9340,16 +18700,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9360,16 +18740,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9378,16 +18778,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9400,16 +18820,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9418,16 +18858,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9438,16 +18898,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9456,16 +18936,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9480,16 +18980,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9498,16 +19018,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9518,16 +19058,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9536,16 +19096,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9558,16 +19138,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9576,16 +19176,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9596,16 +19216,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9614,16 +19254,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9642,16 +19302,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9660,16 +19340,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9680,16 +19380,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9698,16 +19418,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9720,16 +19460,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9738,16 +19498,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9758,16 +19538,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9776,16 +19576,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9800,16 +19620,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9818,16 +19658,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9838,16 +19698,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9856,16 +19736,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9878,16 +19778,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9896,16 +19816,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9916,16 +19856,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9934,16 +19894,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9960,16 +19940,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9978,16 +19978,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -9998,16 +20018,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10016,16 +20056,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10038,16 +20098,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10056,16 +20136,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10076,16 +20176,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10094,16 +20214,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10118,16 +20258,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10136,16 +20296,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10156,16 +20336,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10174,16 +20374,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10196,16 +20416,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10214,16 +20454,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10234,16 +20494,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10252,16 +20532,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10281,16 +20581,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [1.1.0] - Geplant
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10299,16 +20619,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10319,16 +20659,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10337,16 +20697,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10359,16 +20739,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10377,16 +20777,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10397,16 +20817,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10415,16 +20855,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10439,16 +20899,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10457,16 +20937,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10477,16 +20977,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10495,16 +21015,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10517,16 +21057,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10535,16 +21095,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10555,16 +21135,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10573,16 +21173,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10599,16 +21219,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10617,16 +21257,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10637,16 +21297,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10655,16 +21335,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10677,16 +21377,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10695,16 +21415,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10715,16 +21455,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10733,16 +21493,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10757,16 +21537,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10775,16 +21575,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10795,16 +21615,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10813,16 +21653,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10835,16 +21695,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10853,16 +21733,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10873,16 +21773,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10891,16 +21811,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10919,16 +21859,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10937,16 +21897,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10957,16 +21937,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10975,16 +21975,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -10997,16 +22017,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11015,16 +22055,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11035,16 +22095,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11053,16 +22133,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11077,16 +22177,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11095,16 +22215,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11115,16 +22255,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11133,16 +22293,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11155,16 +22335,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11173,16 +22373,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11193,16 +22413,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11211,16 +22451,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11237,16 +22497,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11255,16 +22535,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11275,16 +22575,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11293,16 +22613,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11315,16 +22655,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11333,16 +22693,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11353,16 +22733,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11371,16 +22771,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11395,16 +22815,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11413,16 +22853,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11433,16 +22893,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11451,16 +22931,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11473,16 +22973,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11491,16 +23011,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11511,16 +23051,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11529,16 +23089,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11563,16 +23143,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [2.0.0] - Geplant
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11581,16 +23181,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11601,16 +23221,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11619,16 +23259,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11641,16 +23301,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11659,16 +23339,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11679,16 +23379,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11697,16 +23417,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11721,16 +23461,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11739,16 +23499,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11759,16 +23539,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11777,16 +23577,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11799,16 +23619,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11817,16 +23657,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11837,16 +23697,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11855,16 +23735,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11881,16 +23781,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11899,16 +23819,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11919,16 +23859,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11937,16 +23897,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11959,16 +23939,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11977,16 +23977,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -11997,16 +24017,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12015,16 +24055,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12039,16 +24099,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12057,16 +24137,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12077,16 +24177,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12095,16 +24215,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12117,16 +24257,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12135,16 +24295,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12155,16 +24335,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12173,16 +24373,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12201,16 +24421,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12219,16 +24459,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12239,16 +24499,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12257,16 +24537,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12279,16 +24579,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12297,16 +24617,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12317,16 +24657,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12335,16 +24695,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12359,16 +24739,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12377,16 +24777,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12397,16 +24817,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12415,16 +24855,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12437,16 +24897,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12455,16 +24935,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12475,16 +24975,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12493,16 +25013,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12519,16 +25059,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12537,16 +25097,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12557,16 +25137,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12575,16 +25175,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12597,16 +25217,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12615,16 +25255,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12635,16 +25295,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12653,16 +25333,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12677,16 +25377,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12695,16 +25415,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12715,16 +25455,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12733,16 +25493,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12755,16 +25535,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12773,16 +25573,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12793,16 +25613,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes
@@ -12811,16 +25651,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.1.0] - 2025-12-04
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 
 ## [1.1.1] - 2025-12-05
 
 
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
+
 ## [1.2.0] - 2025-12-07
 
+
+## [1.3.0] - 2025-12-07
+
+### Changes
+- feat: Add custom todo/info lists with tab navigation, inline editing, and PDF export
 ### Changes
 - feat: Add file priority system with visual highlighting
 ### Changes

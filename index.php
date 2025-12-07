@@ -362,13 +362,18 @@ function renderLogin(string $brand, string $title, ?string $error): void
 /* ---------------------------------------------------
    DATEIEN EINLESEN
 --------------------------------------------------- */
+// Read active tab from URL parameter
+$activeTab = $_GET['tab'] ?? 'documents';
+
 $files = [];
 $orderFile = $downloadDir . '/.sort_order.json';
 $statsFile = $downloadDir . '/.download_stats.json';
 $priorityFile = $downloadDir . '/.file_priorities.json';
+$customListsFile = $downloadDir . '/.custom_lists.json';
 $savedOrder = [];
 $downloadStats = [];
 $filePriorities = [];
+$customLists = ['tabs' => []];
 
 // Load saved sort order
 if (file_exists($orderFile)) {
@@ -378,6 +383,11 @@ if (file_exists($orderFile)) {
 // Load download statistics
 if (file_exists($statsFile)) {
     $downloadStats = json_decode(file_get_contents($statsFile), true) ?? [];
+}
+
+// Load custom lists
+if (file_exists($customListsFile)) {
+    $customLists = json_decode(file_get_contents($customListsFile), true) ?? ['tabs' => []];
 }
 
 // Load file priorities
@@ -515,8 +525,37 @@ if (isset($_SESSION['upload_error'])) {
 
     <div class="card p-4 mb-4">
 
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs mb-3" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link <?= $activeTab === 'documents' ? 'active' : '' ?>" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab">
+                    📁 Dokumente
+                </button>
+            </li>
+            <?php foreach ($customLists['tabs'] as $index => $tab): ?>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link <?= $activeTab === $tab['id'] ? 'active' : '' ?>" id="<?= htmlspecialchars($tab['id']) ?>-tab" data-bs-toggle="tab" data-bs-target="#<?= htmlspecialchars($tab['id']) ?>" type="button" role="tab">
+                        <?= htmlspecialchars($tab['title']) ?>
+                    </button>
+                </li>
+            <?php endforeach; ?>
+            <?php if (hasPermission('manage_users')): ?>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="add-tab-btn" onclick="openAddTabModal()" type="button" title="Neue Liste erstellen">
+                        ➕
+                    </button>
+                </li>
+            <?php endif; ?>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="mainTabsContent">
+            
+            <!-- Documents Tab (Default) -->
+            <div class="tab-pane fade <?= $activeTab === 'documents' ? 'show active' : '' ?>" id="documents" role="tabpanel">
+
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="h5 mb-0">Dokumente</h2>
+            <h2 class="h5 mb-0">Dateiliste</h2>
             <?php if (hasPermission('merge')): ?>
                 <div id="pdfMergeActions">
                     <button type="button" class="btn btn-sm btn-success" onclick="mergePDFs()">
@@ -614,6 +653,97 @@ if (isset($_SESSION['upload_error'])) {
             </table>
         </div>
 
+            </div>
+            <!-- End Documents Tab -->
+
+            <!-- Custom List Tabs -->
+            <?php foreach ($customLists['tabs'] as $tab): ?>
+                <div class="tab-pane fade <?= $activeTab === $tab['id'] ? 'show active' : '' ?>" id="<?= htmlspecialchars($tab['id']) ?>" role="tabpanel">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="h5 mb-0"><?= htmlspecialchars($tab['title']) ?></h2>
+                        <?php if (hasPermission('manage_users')): ?>
+                            <div>
+                                <button class="btn btn-sm btn-primary" onclick="addListRow('<?= htmlspecialchars($tab['id']) ?>')">
+                                    ➕ Eintrag hinzufügen
+                                </button>
+                                <button class="btn btn-sm btn-danger" onclick="deleteList('<?= htmlspecialchars($tab['id']) ?>')">
+                                    🗑️ Liste löschen
+                                </button>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <?php foreach ($tab['columns'] as $colIndex => $column): ?>
+                                        <th><?= htmlspecialchars($column) ?></th>
+                                    <?php endforeach; ?>
+                                    <?php if (hasPermission('manage_users')): ?>
+                                        <th class="text-end">Aktionen</th>
+                                    <?php endif; ?>
+                                </tr>
+                            </thead>
+                            <tbody id="list-body-<?= htmlspecialchars($tab['id']) ?>">
+                                <?php foreach ($tab['rows'] as $rowIndex => $row):
+                                    $prioClass = '';
+                                    if ($row['priority'] > 0) {
+                                        $prioClass = 'priority-' . $row['priority'];
+                                    }
+                                    ?>
+                                    <tr class="<?= $prioClass ?>" data-list-id="<?= htmlspecialchars($tab['id']) ?>" data-row-index="<?= $rowIndex ?>">
+                                        <td>
+                                            <input type="checkbox" 
+                                                   <?= $row['checked'] ? 'checked' : '' ?>
+                                                   onchange="toggleListCheckbox('<?= htmlspecialchars($tab['id']) ?>', <?= $rowIndex ?>, this.checked)">
+                                        </td>
+                                        <td class="editable-prio" 
+                                            data-list-id="<?= htmlspecialchars($tab['id']) ?>" 
+                                            data-row-index="<?= $rowIndex ?>" 
+                                            data-priority="<?= $row['priority'] ?>"
+                                            <?= hasPermission('manage_users') ? 'onclick="editPrioInline(this)"' : '' ?>>
+                                            <?php if ($row['priority'] > 0): ?>
+                                                <span class="badge bg-secondary">Prio <?= $row['priority'] ?></span>
+                                            <?php else: ?>
+                                                <span class="text-muted">-</span>
+                                            <?php endif; ?>
+                                        </td>
+                                        <?php foreach ($row['cells'] as $cellIndex => $cell): ?>
+                                            <td class="editable-cell" 
+                                                data-list-id="<?= htmlspecialchars($tab['id']) ?>" 
+                                                data-row-index="<?= $rowIndex ?>" 
+                                                data-cell-index="<?= $cellIndex ?>"
+                                                <?= hasPermission('manage_users') ? 'ondblclick="editCellInline(this)"' : '' ?>>
+                                                <?= htmlspecialchars($cell) ?>
+                                            </td>
+                                        <?php endforeach; ?>
+                                        <?php if (hasPermission('manage_users')): ?>
+                                            <td class="text-end">
+                                                <button class="btn btn-sm btn-danger" onclick="deleteListRow('<?= htmlspecialchars($tab['id']) ?>', <?= $rowIndex ?>)" title="Löschen">
+                                                    🗑️
+                                                </button>
+                                            </td>
+                                        <?php endif; ?>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- PDF Download Button -->
+                    <div class="mt-3 text-end">
+                        <button class="btn btn-sm btn-outline-primary" onclick="downloadListAsPDF('<?= htmlspecialchars($tab['id']) ?>', '<?= htmlspecialchars($tab['title']) ?>')">
+                            📄 Liste als PDF herunterladen
+                        </button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+            <!-- End Custom List Tabs -->
+
+        </div>
+        <!-- End Tab Content -->
+
     </div>
 
     <?php if (hasPermission('upload')): ?>
@@ -665,6 +795,20 @@ if (isset($_SESSION['upload_error'])) {
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script>
+// Activate tab based on URL parameter
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const activeTab = urlParams.get('tab');
+    
+    if (activeTab && activeTab !== 'documents') {
+        const tabElement = document.getElementById(activeTab + '-tab');
+        if (tabElement) {
+            const tab = new bootstrap.Tab(tabElement);
+            tab.show();
+        }
+    }
+});
+
 function confirmDelete(fileName) {
     if (confirm('Datei "' + fileName + '" wirklich löschen?')) {
         document.getElementById('deleteFileName').value = fileName;
@@ -730,6 +874,221 @@ function savePriority() {
     // Close modal
     const modal = bootstrap.Modal.getInstance(document.getElementById('priorityModal'));
     modal.hide();
+}
+
+// Custom Lists Management
+function openAddTabModal() {
+    const modal = new bootstrap.Modal(document.getElementById('addTabModal'));
+    document.getElementById('newTabTitle').value = '';
+    modal.show();
+}
+
+function createNewTab() {
+    const title = document.getElementById('newTabTitle').value.trim();
+    if (!title) {
+        alert('Bitte einen Titel eingeben');
+        return;
+    }
+    
+    fetch('save_custom_list.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+        },
+        body: 'action=create_tab&title=' + encodeURIComponent(title)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            reloadWithActiveTab(data.list_id);
+        } else {
+            alert('Fehler: ' + (data.error || 'Unbekannter Fehler'));
+        }
+    });
+    
+    const modal = bootstrap.Modal.getInstance(document.getElementById('addTabModal'));
+    modal.hide();
+}
+
+function reloadWithActiveTab(tabId) {
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tabId);
+    window.location.href = url.toString();
+}
+
+function toggleListCheckbox(listId, rowIndex, checked) {
+    fetch('save_custom_list.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+        },
+        body: 'action=toggle_checkbox&list_id=' + encodeURIComponent(listId) + 
+              '&row_index=' + rowIndex + '&checked=' + (checked ? '1' : '0')
+    });
+}
+
+function addListRow(listId) {
+    fetch('save_custom_list.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+        },
+        body: 'action=add_row&list_id=' + encodeURIComponent(listId)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            reloadWithActiveTab(listId);
+        } else {
+            alert('Fehler: ' + (data.error || 'Unbekannter Fehler'));
+        }
+    });
+}
+
+// Inline Editing - Zelle
+function editCellInline(cell) {
+    const currentValue = cell.textContent.trim();
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = currentValue;
+    input.className = 'form-control form-control-sm';
+    input.style.width = '100%';
+    
+    cell.textContent = '';
+    cell.appendChild(input);
+    input.focus();
+    input.select();
+    
+    const save = () => {
+        const newValue = input.value.trim();
+        if (newValue !== currentValue) {
+            saveCellEdit(cell.dataset.listId, cell.dataset.rowIndex, cell.dataset.cellIndex, newValue);
+        }
+        cell.textContent = newValue || currentValue;
+    };
+    
+    input.addEventListener('blur', save);
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            save();
+        } else if (e.key === 'Escape') {
+            cell.textContent = currentValue;
+        }
+    });
+}
+
+// Inline Editing - Prio
+function editPrioInline(cell) {
+    const currentPrio = parseInt(cell.dataset.priority) || 0;
+    const select = document.createElement('select');
+    select.className = 'form-select form-select-sm';
+    select.innerHTML = `
+        <option value="0">-</option>
+        <option value="1">Prio 1</option>
+        <option value="2">Prio 2</option>
+        <option value="3">Prio 3</option>
+    `;
+    select.value = currentPrio;
+    
+    cell.innerHTML = '';
+    cell.appendChild(select);
+    select.focus();
+    
+    const save = () => {
+        const newPrio = parseInt(select.value);
+        if (newPrio !== currentPrio) {
+            savePrioEdit(cell.dataset.listId, cell.dataset.rowIndex, newPrio);
+        }
+        
+        // Update display
+        const row = cell.closest('tr');
+        row.className = row.className.replace(/priority-\d+/g, '');
+        if (newPrio > 0) {
+            row.classList.add('priority-' + newPrio);
+            cell.innerHTML = '<span class="badge bg-secondary">Prio ' + newPrio + '</span>';
+        } else {
+            cell.innerHTML = '<span class="text-muted">-</span>';
+        }
+        cell.dataset.priority = newPrio;
+    };
+    
+    select.addEventListener('blur', save);
+    select.addEventListener('change', save);
+}
+
+function saveCellEdit(listId, rowIndex, cellIndex, value) {
+    fetch('save_custom_list.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+        },
+        body: 'action=edit_cell&list_id=' + encodeURIComponent(listId) + 
+              '&row_index=' + rowIndex + '&cell_index=' + cellIndex + 
+              '&value=' + encodeURIComponent(value)
+    });
+}
+
+function savePrioEdit(listId, rowIndex, priority) {
+    fetch('save_custom_list.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+        },
+        body: 'action=edit_priority&list_id=' + encodeURIComponent(listId) + 
+              '&row_index=' + rowIndex + '&priority=' + priority
+    });
+}
+
+function deleteListRow(listId, rowIndex) {
+    if (confirm('Diesen Eintrag wirklich löschen?')) {
+        fetch('save_custom_list.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+            },
+            body: 'action=delete_row&list_id=' + encodeURIComponent(listId) + 
+                  '&row_index=' + rowIndex
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                reloadWithActiveTab(listId);
+            } else {
+                alert('Fehler: ' + (data.error || 'Unbekannter Fehler'));
+            }
+        });
+    }
+}
+
+function deleteList(listId) {
+    if (confirm('Diese gesamte Liste wirklich löschen?')) {
+        fetch('save_custom_list.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+            },
+            body: 'action=delete_list&list_id=' + encodeURIComponent(listId)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                window.location.href = '?tab=documents';
+            } else {
+                alert('Fehler: ' + (data.error || 'Unbekannter Fehler'));
+            }
+        });
+    }
+}
+
+function downloadListAsPDF(listId, title) {
+    window.open('download_list_pdf.php?list_id=' + encodeURIComponent(listId), '_blank');
 }
 
 <?php if (hasPermission('sort')): ?>
@@ -1133,6 +1492,30 @@ function showShortcutsHelp() {
     </div>
 </div>
 
+<!-- Add Tab Modal -->
+<div class="modal fade" id="addTabModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">➕ Neue Liste erstellen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="newTabTitle" class="form-label">Titel der Liste:</label>
+                    <input type="text" id="newTabTitle" class="form-control" placeholder="z.B. Todo Liste, Bestellungen...">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Abbrechen</button>
+                <button type="button" class="btn btn-primary" onclick="createNewTab()">
+                    ✅ Erstellen
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Loading Overlay mit Flammy (für Merge und Download) -->
 <div id="loadingOverlay" class="loading-overlay" onclick="this.style.display='none';">
     <div class="loading-content">
@@ -1149,6 +1532,32 @@ function showShortcutsHelp() {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Tab Styles */
+#add-tab-btn {
+    font-size: 1.2rem;
+    padding: 0.375rem 0.75rem;
+    border: 2px dashed #ccc;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+#add-tab-btn:hover {
+    border-color: #0d6efd;
+    background: #e7f3ff;
+}
+
+/* Inline Editing */
+.editable-cell:hover,
+.editable-prio:hover {
+    background-color: #f0f8ff !important;
+    cursor: pointer;
+}
+
+.editable-cell input,
+.editable-prio select {
+    border: 2px solid #0d6efd;
 }
 
 /* Priority row colors */
