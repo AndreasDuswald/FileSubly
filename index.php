@@ -169,11 +169,15 @@ if (hasPermission('upload') && isset($_POST['confirm_overwrite'])) {
     $pending = $_SESSION['upload_pending'] ?? null;
     if ($pending && file_exists($pending['tmp_name'])) {
         $targetPath = $downloadDir . '/' . $pending['name'];
-        if (move_uploaded_file($pending['tmp_name'], $targetPath)) {
+        // Use rename() or copy() + unlink() instead of move_uploaded_file for already-moved files
+        if (copy($pending['tmp_name'], $targetPath)) {
+            unlink($pending['tmp_name']); // Remove temp file
             $_SESSION['upload_success'] = "Datei '{$pending['name']}' wurde überschrieben.";
         } else {
             $_SESSION['upload_error'] = "Fehler beim Überschreiben der Datei.";
         }
+    } else {
+        $_SESSION['upload_error'] = "Temporäre Datei nicht gefunden.";
     }
     unset($_SESSION['upload_pending'], $_SESSION['upload_confirm_needed']);
     header('Location: ' . $_SERVER['PHP_SELF']);
