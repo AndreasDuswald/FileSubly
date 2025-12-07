@@ -1,6 +1,14 @@
 <?php
 declare(strict_types=1);
 
+// Verhindere Output vor JSON (PHP Warnings etc.)
+error_reporting(E_ALL);
+ini_set('display_errors', '0');  // Keine Errors in Output
+ini_set('log_errors', '1');       // Stattdessen in Log schreiben
+
+// JSON Header setzen
+header('Content-Type: application/json; charset=utf-8');
+
 session_start();
 require __DIR__ . '/config.php';
 

@@ -547,12 +547,14 @@ $(document).on("change", ".file-checkbox", updateActionButtons);
 Ein integriertes Error-Reporting System für Admins, das alle Fehler, Warnungen und kritischen Events zentral sammelt und visualisiert.
 
 **Probleme die gelöst werden:**
+
 - ❌ PHP-Fehler werden nur in Apache-Logs geschrieben (nicht benutzerfreundlich)
 - ❌ Admins wissen nicht wenn etwas schiefgeht
 - ❌ User bekommen generische "Es ist ein Fehler aufgetreten" Messages
 - ❌ Debugging erfordert Server-Zugriff
 
 **Neue Lösung:**
+
 - ✅ Zentrales Error-Dashboard für Admins
 - ✅ E-Mail-Benachrichtigung bei kritischen Fehlern
 - ✅ Benutzerfreundliche Fehlermeldungen für User
@@ -561,6 +563,7 @@ Ein integriertes Error-Reporting System für Admins, das alle Fehler, Warnungen 
 ### Features
 
 #### 1. Error Dashboard (Admin-Only)
+
 ```
 ┌──────────────────────────────────────────────────────┐
 │  🚨 System-Fehler & Warnungen                        │
@@ -596,6 +599,7 @@ Ein integriertes Error-Reporting System für Admins, das alle Fehler, Warnungen 
 #### 2. Error-Typen & Severity
 
 **Kritisch (🔴):**
+
 - PHP Fatal Errors
 - Datenbank-Corruption (JSON-Files)
 - Upload-Fehler (Permission-Problems)
@@ -603,12 +607,14 @@ Ein integriertes Error-Reporting System für Admins, das alle Fehler, Warnungen 
 - Authentication-Failures (außer normale Login-Fehler)
 
 **Warnung (⚠️):**
+
 - Dateigröße nahe am Limit
 - Langsame Operations (>5s)
 - Viele fehlgeschlagene Logins (Bot-Verdacht)
 - Speicherplatz <10% frei
 
 **Info (ℹ️):**
+
 - Erfolgreiche Backups
 - System-Updates
 - Neue User erstellt
@@ -617,6 +623,7 @@ Ein integriertes Error-Reporting System für Admins, das alle Fehler, Warnungen 
 #### 3. E-Mail-Benachrichtigungen
 
 **Sofort-Benachrichtigung** (bei kritischen Fehlern):
+
 ```
 Betreff: [FileSubly] 🚨 Kritischer Fehler aufgetreten
 
@@ -646,6 +653,7 @@ Diese E-Mail wurde automatisch generiert.
 ```
 
 **Tägliche Digest-Mail** (Optional):
+
 - Zusammenfassung aller Fehler des Tages
 - Nur wenn Fehler aufgetreten sind
 - Konfigurierbare Uhrzeit (z.B. 20:00)
@@ -653,12 +661,14 @@ Diese E-Mail wurde automatisch generiert.
 #### 4. User-Friendly Error Messages
 
 **Aktuell:**
+
 ```php
 // Generisch und nicht hilfreich
 $_SESSION['upload_error'] = "Fehler beim Hochladen.";
 ```
 
 **Neu:**
+
 ```php
 // Kontextbezogen und hilfreich
 $_SESSION['upload_error'] = "Upload fehlgeschlagen: Datei ist zu groß (52 MB / max. 50 MB). Bitte Datei komprimieren.";
@@ -675,6 +685,7 @@ logError('upload_size_exceeded', [
 ### Technische Umsetzung
 
 #### Datei-Struktur
+
 ```
 .error_log.json          - Alle Fehler mit Timestamps, Context
 .error_config.json       - Error-Reporting Einstellungen
@@ -683,6 +694,7 @@ includes/error_handler.php - Custom Error/Exception Handler
 ```
 
 #### Custom Error Handler
+
 ```php
 // In config.php oder separater error_handler.php
 
@@ -695,26 +707,26 @@ function customErrorHandler($errno, $errstr, $errfile, $errline) {
         E_WARNING, E_NOTICE => 'warning',
         default => 'info'
     };
-    
+
     logError('php_error', [
         'message' => $errstr,
         'file' => $errfile,
         'line' => $errline,
         'user' => $_SESSION['user'] ?? 'guest'
     ], $severity);
-    
+
     // Bei kritischen Fehlern: E-Mail an Admin
     if ($severity === 'critical') {
         sendErrorNotificationEmail($errstr, $errfile, $errline);
     }
-    
+
     return false; // PHP default handler läuft weiter
 }
 
 function logError(string $type, array $context, string $severity = 'info'): void {
     $logFile = __DIR__ . '/.error_log.json';
     $logs = file_exists($logFile) ? json_decode(file_get_contents($logFile), true) : [];
-    
+
     $logs[] = [
         'id' => uniqid('err_'),
         'type' => $type,
@@ -723,17 +735,18 @@ function logError(string $type, array $context, string $severity = 'info'): void
         'timestamp' => date('Y-m-d H:i:s'),
         'resolved' => false
     ];
-    
+
     // Nur letzte 500 Fehler behalten
     if (count($logs) > 500) {
         $logs = array_slice($logs, -500);
     }
-    
+
     file_put_contents($logFile, json_encode($logs, JSON_PRETTY_PRINT));
 }
 ```
 
 #### Error-Dashboard (errors.php)
+
 ```php
 // Nur für Admins zugänglich
 if (!hasPermission('manage_users')) {
@@ -762,6 +775,7 @@ $grouped = groupErrorsByType($errors);
 ```
 
 #### Settings Integration
+
 ```php
 // In settings.php neue Sektion hinzufügen
 
@@ -778,6 +792,7 @@ $grouped = groupErrorsByType($errors);
 ### Implementation Plan
 
 #### Phase 1: Error Logging (1h)
+
 1. `includes/error_handler.php` erstellen
 2. Custom Error/Exception Handler implementieren
 3. `logError()` Funktion mit JSON-Storage
@@ -785,6 +800,7 @@ $grouped = groupErrorsByType($errors);
 5. Bestehende Error-Messages ersetzen mit `logError()` Calls
 
 #### Phase 2: Error Dashboard (1.5h)
+
 1. `errors.php` erstellen (Admin-Only)
 2. Fehler-Liste mit Filter (Severity, Resolved, Days)
 3. Statistik-Übersicht (Cards)
@@ -793,6 +809,7 @@ $grouped = groupErrorsByType($errors);
 6. Export als CSV (optional)
 
 #### Phase 3: E-Mail Integration (1h)
+
 1. `sendErrorNotificationEmail()` Funktion
 2. Template für kritische Fehler
 3. Template für Daily Digest
@@ -800,6 +817,7 @@ $grouped = groupErrorsByType($errors);
 5. Settings-Toggle für E-Mail-Benachrichtigungen
 
 #### Phase 4: User-Facing Improvements (1h)
+
 1. Alle generischen Error-Messages durchgehen
 2. Kontextbezogene, hilfreiche Messages schreiben
 3. Error-Codes einführen (z.B. ERR_UPLOAD_SIZE)
@@ -807,6 +825,7 @@ $grouped = groupErrorsByType($errors);
 5. "Weitere Hilfe" Links in Error-Messages
 
 #### Phase 5: Testing & Polish (30 Min)
+
 1. Kritische Fehler provozieren und testen
 2. E-Mail-Versand testen
 3. Dashboard-Filter testen
@@ -826,16 +845,19 @@ $grouped = groupErrorsByType($errors);
 ### Weitere Ausbaustufen
 
 **v1.5.1 - Monitoring:**
+
 - System-Health Dashboard (CPU, RAM, Disk)
 - Uptime-Tracking
 - Performance-Metriken (Page Load Times)
 
 **v1.5.2 - Alerts:**
+
 - Webhook-Integration (Slack, Discord)
 - SMS-Benachrichtigung (via Twilio)
 - Push-Notifications (Browser)
 
 **v1.5.3 - Analytics:**
+
 - Error-Trends über Zeit visualisieren
 - Meistgenutzte Features tracken
 - User-Behavior Analytics
@@ -857,11 +879,13 @@ $grouped = groupErrorsByType($errors);
 ### Problem
 
 **Aktuell:**
+
 - Bootstrap, JavaScript und CSS werden **lokal** ausgeliefert (`assets/css/bootstrap.min.css`, `assets/js/bootstrap.bundle.min.js`)
 - Vorteile: ✅ Offline-fähig, ✅ Keine externen Abhängigkeiten, ✅ Datenschutz (kein CDN-Tracking)
 - Nachteile: ❌ Größerer Repo-Footprint, ❌ Manuelle Updates nötig, ❌ Kein Browser-Caching über Domains hinweg
 
 **Idee:**
+
 - **Standard-Installation** nutzt **CDN-Links** (schneller Setup, kleinere Download-Größe)
 - **Admin-Toggle** zum Umschalten auf **lokale Assets** (für Air-Gapped-Systeme, Intranet, Datenschutz)
 - Bei Umschaltung: Detaillierte Installationsanleitung für Libraries anzeigen
@@ -869,30 +893,36 @@ $grouped = groupErrorsByType($errors);
 ### Use Cases
 
 #### 1. Schneller Start (CDN)
+
 **Szenario:** Neue Installation, Internet verfügbar  
 **Vorteil:** Sofort lauffähig, keine Library-Downloads nötig  
 **Nachteil:** Erfordert Internetverbindung
 
 ```html
 <!-- CDN-Modus (Standard) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
 #### 2. Offline / Air-Gapped (Lokal)
+
 **Szenario:** Intranet, kein Internet, Datenschutz-Anforderungen  
 **Vorteil:** Komplett offline-fähig, keine externen Anfragen  
 **Nachteil:** Erfordert manuelle Installation der Libraries
 
 ```html
 <!-- Lokaler Modus -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 ```
 
 ### Features
 
 #### 1. Settings Toggle
+
 ```php
 // In settings.json
 'deployment' => [
@@ -907,6 +937,7 @@ $grouped = groupErrorsByType($errors);
 ```
 
 #### 2. Admin-Panel Sektion
+
 ```
 ┌──────────────────────────────────────────────────────┐
 │  ⚙️ Deployment-Einstellungen                        │
@@ -933,6 +964,7 @@ $grouped = groupErrorsByType($errors);
 #### 3. Installations-Assistent (bei Umschaltung zu Lokal)
 
 **Modal nach Toggle:**
+
 ```
 ┌──────────────────────────────────────────────────────┐
 │  📦 Lokale Assets installieren                       │
@@ -972,6 +1004,7 @@ $grouped = groupErrorsByType($errors);
 #### 4. Automatische Asset-Detection
 
 **Beim Umschalten auf Lokal:**
+
 ```php
 function validateLocalAssets(): array {
     $required = [
@@ -979,19 +1012,20 @@ function validateLocalAssets(): array {
         'assets/js/bootstrap.bundle.min.js' => 'Bootstrap JavaScript',
         'lib/tcpdf/tcpdf.php' => 'TCPDF Library'
     ];
-    
+
     $missing = [];
     foreach ($required as $path => $name) {
         if (!file_exists(__DIR__ . '/' . $path)) {
             $missing[] = $name;
         }
     }
-    
+
     return $missing;
 }
 ```
 
 **Warnung bei fehlenden Files:**
+
 ```
 ⚠️ Achtung: Folgende Assets fehlen noch:
    • Bootstrap CSS
@@ -1004,42 +1038,44 @@ Siehe Installationsanleitung.
 ### Technische Umsetzung
 
 #### Phase 1: Helper-Funktionen (30 Min)
+
 ```php
 // In config.php
 
 function getAssetUrl(string $type): string {
     $settings = loadSettings();
     $useCdn = $settings['deployment']['use_cdn'] ?? true;
-    
+
     if ($useCdn) {
         return $settings['deployment']['cdn_urls'][$type] ?? '';
     }
-    
+
     $localPaths = [
         'bootstrap_css' => 'assets/css/bootstrap.min.css',
         'bootstrap_js' => 'assets/js/bootstrap.bundle.min.js'
     ];
-    
+
     return $localPaths[$type] ?? '';
 }
 
 function getAssetIntegrity(string $type): string {
     $settings = loadSettings();
     $useCdn = $settings['deployment']['use_cdn'] ?? true;
-    
+
     if (!$useCdn) {
         return ''; // Keine Integrity-Checks bei lokalen Files
     }
-    
+
     return $settings['deployment']['cdn_urls'][$type . '_integrity'] ?? '';
 }
 ```
 
 #### Phase 2: Template-Anpassung (45 Min)
+
 ```php
 // In index.php und allen anderen Templates
-<link 
-    href="<?= getAssetUrl('bootstrap_css') ?>" 
+<link
+    href="<?= getAssetUrl('bootstrap_css') ?>"
     rel="stylesheet"
     <?php if ($integrity = getAssetIntegrity('bootstrap_css')): ?>
         integrity="<?= $integrity ?>"
@@ -1047,7 +1083,7 @@ function getAssetIntegrity(string $type): string {
     <?php endif; ?>
 >
 
-<script 
+<script
     src="<?= getAssetUrl('bootstrap_js') ?>"
     <?php if ($integrity = getAssetIntegrity('bootstrap_js')): ?>
         integrity="<?= $integrity ?>"
@@ -1057,6 +1093,7 @@ function getAssetIntegrity(string $type): string {
 ```
 
 #### Phase 3: Admin-Toggle (60 Min)
+
 1. Settings-Sektion "Deployment" hinzufügen
 2. Toggle-Button mit Live-Preview
 3. Validierung bei Umschaltung (validateLocalAssets)
@@ -1064,6 +1101,7 @@ function getAssetIntegrity(string $type): string {
 5. Modal mit Installationsanleitung
 
 #### Phase 4: Installer-Script (30 Min)
+
 ```bash
 #!/bin/bash
 # install_assets.sh - Optional: Automatisches Download-Script
@@ -1088,6 +1126,7 @@ echo "✅ Installation complete!"
 ```
 
 #### Phase 5: Dokumentation (30 Min)
+
 - README.md Update: CDN vs. Lokal Sektion
 - INSTALL.md: Detaillierte Anleitung für beide Modi
 - Troubleshooting: "Assets fehlen" Fehlerbehandlung
@@ -1095,16 +1134,19 @@ echo "✅ Installation complete!"
 ### Vorteile
 
 **Für Entwickler:**
+
 - 🚀 Schnellere Entwicklung (CDN-Mode)
 - 🔄 Einfache Updates (nur CDN-URLs ändern)
 - 📦 Kleineres Git-Repo (bei CDN-Default)
 
 **Für Benutzer:**
+
 - ⚡ Schnellerer Setup (CDN-Mode)
 - 🔒 Datenschutz-Option (Lokal-Mode)
 - 🌐 Flexibilität je nach Umgebung
 
 **Für Admins:**
+
 - 🎛️ Einfaches Umschalten per Toggle
 - ✅ Automatische Validierung
 - 📋 Klare Installationsanleitung
@@ -1112,11 +1154,13 @@ echo "✅ Installation complete!"
 ### Nachteile / Überlegungen
 
 **CDN-Modus:**
+
 - ⚠️ Externe Abhängigkeit (jsdelivr.net)
 - ⚠️ Potenzielle Tracking-Cookies (Browser-Fingerprinting)
 - ⚠️ Erfordert Internetverbindung
 
 **Lokal-Modus:**
+
 - ⚠️ Manuelle Installation erforderlich
 - ⚠️ Größeres Repo (wenn Assets committed)
 - ⚠️ Manuelle Updates bei neuen Bootstrap-Versionen
@@ -1126,6 +1170,7 @@ echo "✅ Installation complete!"
 **Empfehlung: CDN als Standard**
 
 **Argumente:**
+
 - ✅ Einfacherer Einstieg für neue User
 - ✅ Kleinere Repository-Größe
 - ✅ Bootstrap wird von vielen Seiten genutzt (Browser-Cache)
@@ -1135,14 +1180,16 @@ echo "✅ Installation complete!"
 **Gegenargument: Lokal als Standard** (aktuelle Situation)
 
 **Argumente:**
+
 - ✅ Offline-fähig out-of-the-box
 - ✅ Keine externen Abhängigkeiten
 - ✅ Datenschutz-freundlicher (keine CDN-Anfragen)
 - ✅ Funktionierende Installation garantiert
 - ⚠️ Größerer Initial-Download
 
-**Fazit:** Aktuell ist **Lokal-Mode Standard** und das ist gut so! 
+**Fazit:** Aktuell ist **Lokal-Mode Standard** und das ist gut so!
 Das CDN-Feature sollte **optional** bleiben für User die:
+
 - Bandbreite sparen wollen
 - Schnelleren Setup brauchen
 - Bereits viele Bootstrap-Projekte nutzen (Cache-Vorteil)
@@ -1150,6 +1197,7 @@ Das CDN-Feature sollte **optional** bleiben für User die:
 ### Alternative: Hybrid-Ansatz
 
 **Best of Both Worlds:**
+
 1. **Repository:** Enthält lokale Assets (wie jetzt)
 2. **Settings:** Toggle für CDN (optional)
 3. **Fallback:** Wenn CDN fehlschlägt → Automatisch auf Lokal wechseln
@@ -1158,25 +1206,25 @@ Das CDN-Feature sollte **optional** bleiben für User die:
 function getAssetUrl(string $type): string {
     $settings = loadSettings();
     $useCdn = $settings['deployment']['use_cdn'] ?? false; // Standard: Lokal!
-    
+
     if ($useCdn) {
         $cdnUrl = $settings['deployment']['cdn_urls'][$type] ?? '';
-        
+
         // CDN-Check: Ist CDN erreichbar?
         if ($cdnUrl && isCdnReachable($cdnUrl)) {
             return $cdnUrl;
         }
-        
+
         // Fallback auf Lokal
         error_log("CDN nicht erreichbar, Fallback auf lokale Assets");
     }
-    
+
     // Standard: Lokale Assets
     $localPaths = [
         'bootstrap_css' => 'assets/css/bootstrap.min.css',
         'bootstrap_js' => 'assets/js/bootstrap.bundle.min.js'
     ];
-    
+
     return $localPaths[$type] ?? '';
 }
 
@@ -1189,7 +1237,7 @@ function isCdnReachable(string $url, int $timeout = 2): bool {
     curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
-    
+
     return $httpCode === 200;
 }
 ```
@@ -1198,12 +1246,14 @@ function isCdnReachable(string $url, int $timeout = 2): bool {
 
 **Jetzt:** ❌ Nicht prioritär  
 **Warum:**
+
 - Aktuelle Lösung (lokal) funktioniert perfekt
 - Kein dringender Bedarf für CDN-Modus
 - Andere Features wichtiger (Email, Error-Reporting)
 
 **Später (v1.6.0):** ✅ Nice-to-Have Feature  
 **Wenn:**
+
 - Email + Error-Reporting läuft
 - User fragen explizit nach CDN-Option
 - Größere Refactoring-Phase geplant
@@ -1211,6 +1261,7 @@ function isCdnReachable(string $url, int $timeout = 2): bool {
 ### Dokumentation in README
 
 **Neue Sektion hinzufügen:**
+
 ```markdown
 ## 🌐 Asset-Auslieferung (CDN vs. Lokal)
 
@@ -1218,6 +1269,7 @@ function isCdnReachable(string $url, int $timeout = 2): bool {
 
 FileSubly nutzt standardmäßig **lokale Kopien** von Bootstrap und anderen Libraries.
 Dies garantiert:
+
 - ✅ Offline-Funktionalität
 - ✅ Keine externen Abhängigkeiten
 - ✅ Datenschutz (keine CDN-Tracking)

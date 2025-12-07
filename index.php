@@ -1288,13 +1288,29 @@ function saveOrder() {
         method: 'POST',
         body: formData
     })
-    .then(response => response.json())
+    .then(response => {
+        // Prüfe ob Response OK ist
+        if (!response.ok) {
+            return response.text().then(text => {
+                console.error('Server Error (HTTP ' + response.status + '):', text);
+                throw new Error('HTTP ' + response.status + ': ' + text.substring(0, 100));
+            });
+        }
+        return response.json();
+    })
     .then(data => {
         if (!data.success) {
             console.error('Sortierung speichern fehlgeschlagen:', data.error);
+            alert('⚠️ Sortierung konnte nicht gespeichert werden: ' + data.error);
         }
     })
-    .catch(error => console.error('Fehler beim Speichern:', error));
+    .catch(error => {
+        console.error('Fehler beim Speichern:', error);
+        // Nur bei echten Network-Errors oder JSON-Parse-Errors
+        if (error.message.includes('JSON.parse') || error.message.includes('NetworkError')) {
+            alert('⚠️ Sortierung konnte nicht gespeichert werden. Bitte Seite neu laden.');
+        }
+    });
 }
 
 // PDF Selection & Merge
