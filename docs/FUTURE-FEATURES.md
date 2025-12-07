@@ -535,6 +535,715 @@ $(document).on("change", ".file-checkbox", updateActionButtons);
 
 ---
 
+## 🚨 Error Reporting & Monitoring System
+
+**Status:** 📅 Nach E-Mail-Feature  
+**Priorität:** Mittel  
+**Version:** 1.5.0  
+**Abhängigkeit:** E-Mail-System muss funktionieren
+
+### Konzept
+
+Ein integriertes Error-Reporting System für Admins, das alle Fehler, Warnungen und kritischen Events zentral sammelt und visualisiert.
+
+**Probleme die gelöst werden:**
+- ❌ PHP-Fehler werden nur in Apache-Logs geschrieben (nicht benutzerfreundlich)
+- ❌ Admins wissen nicht wenn etwas schiefgeht
+- ❌ User bekommen generische "Es ist ein Fehler aufgetreten" Messages
+- ❌ Debugging erfordert Server-Zugriff
+
+**Neue Lösung:**
+- ✅ Zentrales Error-Dashboard für Admins
+- ✅ E-Mail-Benachrichtigung bei kritischen Fehlern
+- ✅ Benutzerfreundliche Fehlermeldungen für User
+- ✅ Automatisches Logging mit Context (User, File, Action)
+
+### Features
+
+#### 1. Error Dashboard (Admin-Only)
+```
+┌──────────────────────────────────────────────────────┐
+│  🚨 System-Fehler & Warnungen                        │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  📊 Übersicht (Letzte 7 Tage)                       │
+│  ┌─────────────┬─────────────┬─────────────┐       │
+│  │  Kritisch   │   Warnung   │    Info     │       │
+│  │     3       │     12      │     45      │       │
+│  └─────────────┴─────────────┴─────────────┘       │
+│                                                      │
+│  🔴 Kritische Fehler:                               │
+│  ──────────────────────────────────────────────     │
+│  • PDF Merge fehlgeschlagen (3x heute)             │
+│    User: Peter | Datei: dokument.pdf               │
+│    Fehler: Memory limit exceeded                    │
+│    [Details] [Als gelöst markieren]                │
+│                                                      │
+│  ⚠️ Warnungen:                                      │
+│  ──────────────────────────────────────────────     │
+│  • Upload fast am Limit (48/50 MB)                 │
+│    User: Maria | Datei: großedatei.xlsx            │
+│    [Details]                                        │
+│                                                      │
+│  ℹ️ Informationen:                                  │
+│  ──────────────────────────────────────────────     │
+│  • System-Backup erfolgreich (heute 03:00)         │
+│  • 15 neue Downloads heute                          │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
+
+#### 2. Error-Typen & Severity
+
+**Kritisch (🔴):**
+- PHP Fatal Errors
+- Datenbank-Corruption (JSON-Files)
+- Upload-Fehler (Permission-Problems)
+- PDF-Merge Crashes
+- Authentication-Failures (außer normale Login-Fehler)
+
+**Warnung (⚠️):**
+- Dateigröße nahe am Limit
+- Langsame Operations (>5s)
+- Viele fehlgeschlagene Logins (Bot-Verdacht)
+- Speicherplatz <10% frei
+
+**Info (ℹ️):**
+- Erfolgreiche Backups
+- System-Updates
+- Neue User erstellt
+- Feature-Usage Stats
+
+#### 3. E-Mail-Benachrichtigungen
+
+**Sofort-Benachrichtigung** (bei kritischen Fehlern):
+```
+Betreff: [FileSubly] 🚨 Kritischer Fehler aufgetreten
+
+Hallo Admin,
+
+Ein kritischer Fehler ist aufgetreten:
+
+Fehler: PDF Merge fehlgeschlagen
+User: Peter (peter@example.com)
+Datei: rechnung_2025.pdf
+Zeit: 07.12.2025 18:45:23
+
+Details:
+──────────────────────────────────────
+Fatal error: Allowed memory size of 134217728 bytes exhausted
+Stack Trace: merge_pdf.php:45
+
+Empfohlene Aktion:
+- Memory Limit in php.ini erhöhen
+- Große PDF-Dateien komprimieren
+
+» Zum Error-Dashboard:
+https://your-domain.com/FileSubly/errors.php
+
+──────────────────────────────────────
+Diese E-Mail wurde automatisch generiert.
+```
+
+**Tägliche Digest-Mail** (Optional):
+- Zusammenfassung aller Fehler des Tages
+- Nur wenn Fehler aufgetreten sind
+- Konfigurierbare Uhrzeit (z.B. 20:00)
+
+#### 4. User-Friendly Error Messages
+
+**Aktuell:**
+```php
+// Generisch und nicht hilfreich
+$_SESSION['upload_error'] = "Fehler beim Hochladen.";
+```
+
+**Neu:**
+```php
+// Kontextbezogen und hilfreich
+$_SESSION['upload_error'] = "Upload fehlgeschlagen: Datei ist zu groß (52 MB / max. 50 MB). Bitte Datei komprimieren.";
+
+// Im Hintergrund: Log als Warning für Admin
+logError('upload_size_exceeded', [
+    'user' => $_SESSION['user'],
+    'file' => $fileName,
+    'size' => formatBytes($fileSize),
+    'limit' => formatBytes($maxSize)
+], 'warning');
+```
+
+### Technische Umsetzung
+
+#### Datei-Struktur
+```
+.error_log.json          - Alle Fehler mit Timestamps, Context
+.error_config.json       - Error-Reporting Einstellungen
+errors.php               - Admin Error-Dashboard
+includes/error_handler.php - Custom Error/Exception Handler
+```
+
+#### Custom Error Handler
+```php
+// In config.php oder separater error_handler.php
+
+set_error_handler('customErrorHandler');
+set_exception_handler('customExceptionHandler');
+
+function customErrorHandler($errno, $errstr, $errfile, $errline) {
+    $severity = match($errno) {
+        E_ERROR, E_PARSE, E_CORE_ERROR => 'critical',
+        E_WARNING, E_NOTICE => 'warning',
+        default => 'info'
+    };
+    
+    logError('php_error', [
+        'message' => $errstr,
+        'file' => $errfile,
+        'line' => $errline,
+        'user' => $_SESSION['user'] ?? 'guest'
+    ], $severity);
+    
+    // Bei kritischen Fehlern: E-Mail an Admin
+    if ($severity === 'critical') {
+        sendErrorNotificationEmail($errstr, $errfile, $errline);
+    }
+    
+    return false; // PHP default handler läuft weiter
+}
+
+function logError(string $type, array $context, string $severity = 'info'): void {
+    $logFile = __DIR__ . '/.error_log.json';
+    $logs = file_exists($logFile) ? json_decode(file_get_contents($logFile), true) : [];
+    
+    $logs[] = [
+        'id' => uniqid('err_'),
+        'type' => $type,
+        'severity' => $severity,
+        'context' => $context,
+        'timestamp' => date('Y-m-d H:i:s'),
+        'resolved' => false
+    ];
+    
+    // Nur letzte 500 Fehler behalten
+    if (count($logs) > 500) {
+        $logs = array_slice($logs, -500);
+    }
+    
+    file_put_contents($logFile, json_encode($logs, JSON_PRETTY_PRINT));
+}
+```
+
+#### Error-Dashboard (errors.php)
+```php
+// Nur für Admins zugänglich
+if (!hasPermission('manage_users')) {
+    http_response_code(403);
+    exit('Zugriff verweigert');
+}
+
+$errors = loadErrors();
+
+// Filter
+$severity = $_GET['severity'] ?? 'all'; // all, critical, warning, info
+$resolved = $_GET['resolved'] ?? 'unresolved'; // all, resolved, unresolved
+$days = $_GET['days'] ?? 7;
+
+// Statistiken
+$stats = [
+    'critical' => count(array_filter($errors, fn($e) => $e['severity'] === 'critical')),
+    'warning' => count(array_filter($errors, fn($e) => $e['severity'] === 'warning')),
+    'info' => count(array_filter($errors, fn($e) => $e['severity'] === 'info'))
+];
+
+// Gruppierung (gleiche Fehler zusammenfassen)
+$grouped = groupErrorsByType($errors);
+
+// Darstellung mit Bootstrap Cards
+```
+
+#### Settings Integration
+```php
+// In settings.php neue Sektion hinzufügen
+
+'error_reporting' => [
+    'enabled' => true,
+    'email_on_critical' => true,
+    'daily_digest' => false,
+    'digest_time' => '20:00',
+    'retention_days' => 30,
+    'ignored_errors' => [] // Bestimmte Error-Typen ignorieren
+]
+```
+
+### Implementation Plan
+
+#### Phase 1: Error Logging (1h)
+1. `includes/error_handler.php` erstellen
+2. Custom Error/Exception Handler implementieren
+3. `logError()` Funktion mit JSON-Storage
+4. In `config.php` registrieren
+5. Bestehende Error-Messages ersetzen mit `logError()` Calls
+
+#### Phase 2: Error Dashboard (1.5h)
+1. `errors.php` erstellen (Admin-Only)
+2. Fehler-Liste mit Filter (Severity, Resolved, Days)
+3. Statistik-Übersicht (Cards)
+4. "Als gelöst markieren" Button
+5. Detail-Ansicht für jeden Fehler
+6. Export als CSV (optional)
+
+#### Phase 3: E-Mail Integration (1h)
+1. `sendErrorNotificationEmail()` Funktion
+2. Template für kritische Fehler
+3. Template für Daily Digest
+4. Cron-Job Setup für Digest (optional)
+5. Settings-Toggle für E-Mail-Benachrichtigungen
+
+#### Phase 4: User-Facing Improvements (1h)
+1. Alle generischen Error-Messages durchgehen
+2. Kontextbezogene, hilfreiche Messages schreiben
+3. Error-Codes einführen (z.B. ERR_UPLOAD_SIZE)
+4. Dokumentation für häufige Fehler
+5. "Weitere Hilfe" Links in Error-Messages
+
+#### Phase 5: Testing & Polish (30 Min)
+1. Kritische Fehler provozieren und testen
+2. E-Mail-Versand testen
+3. Dashboard-Filter testen
+4. Performance-Check (Log-File-Größe)
+5. Dokumentation updaten
+
+### Success Criteria
+
+- [ ] Alle PHP-Fehler werden geloggt
+- [ ] Admin bekommt E-Mail bei kritischen Fehlern
+- [ ] Error-Dashboard ist übersichtlich und hilfreich
+- [ ] User sehen verständliche Fehlermeldungen
+- [ ] Fehler können als "gelöst" markiert werden
+- [ ] Daily Digest funktioniert (optional)
+- [ ] Performance-Impact ist minimal (<50ms)
+
+### Weitere Ausbaustufen
+
+**v1.5.1 - Monitoring:**
+- System-Health Dashboard (CPU, RAM, Disk)
+- Uptime-Tracking
+- Performance-Metriken (Page Load Times)
+
+**v1.5.2 - Alerts:**
+- Webhook-Integration (Slack, Discord)
+- SMS-Benachrichtigung (via Twilio)
+- Push-Notifications (Browser)
+
+**v1.5.3 - Analytics:**
+- Error-Trends über Zeit visualisieren
+- Meistgenutzte Features tracken
+- User-Behavior Analytics
+
+---
+
+**Erstellt:** 07.12.2025  
+**Autor:** Andreas Duswald + GitHub Copilot  
+**Status:** 📝 Konzept bereit für Umsetzung nach E-Mail-Feature
+
+---
+
+## 🌐 CDN vs. Lokale Assets (Deployment-Strategie)
+
+**Status:** 💡 Idee für v1.6.0  
+**Priorität:** Niedrig  
+**Komplexität:** Mittel (~2-3 Stunden)
+
+### Problem
+
+**Aktuell:**
+- Bootstrap, JavaScript und CSS werden **lokal** ausgeliefert (`assets/css/bootstrap.min.css`, `assets/js/bootstrap.bundle.min.js`)
+- Vorteile: ✅ Offline-fähig, ✅ Keine externen Abhängigkeiten, ✅ Datenschutz (kein CDN-Tracking)
+- Nachteile: ❌ Größerer Repo-Footprint, ❌ Manuelle Updates nötig, ❌ Kein Browser-Caching über Domains hinweg
+
+**Idee:**
+- **Standard-Installation** nutzt **CDN-Links** (schneller Setup, kleinere Download-Größe)
+- **Admin-Toggle** zum Umschalten auf **lokale Assets** (für Air-Gapped-Systeme, Intranet, Datenschutz)
+- Bei Umschaltung: Detaillierte Installationsanleitung für Libraries anzeigen
+
+### Use Cases
+
+#### 1. Schneller Start (CDN)
+**Szenario:** Neue Installation, Internet verfügbar  
+**Vorteil:** Sofort lauffähig, keine Library-Downloads nötig  
+**Nachteil:** Erfordert Internetverbindung
+
+```html
+<!-- CDN-Modus (Standard) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+#### 2. Offline / Air-Gapped (Lokal)
+**Szenario:** Intranet, kein Internet, Datenschutz-Anforderungen  
+**Vorteil:** Komplett offline-fähig, keine externen Anfragen  
+**Nachteil:** Erfordert manuelle Installation der Libraries
+
+```html
+<!-- Lokaler Modus -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+```
+
+### Features
+
+#### 1. Settings Toggle
+```php
+// In settings.json
+'deployment' => [
+    'use_cdn' => true,  // Standard: CDN aktiviert
+    'cdn_urls' => [
+        'bootstrap_css' => 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+        'bootstrap_js' => 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+        'bootstrap_integrity_css' => 'sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH',
+        'bootstrap_integrity_js' => 'sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz'
+    ]
+]
+```
+
+#### 2. Admin-Panel Sektion
+```
+┌──────────────────────────────────────────────────────┐
+│  ⚙️ Deployment-Einstellungen                        │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  🌐 Asset-Auslieferung                              │
+│                                                      │
+│  ○ CDN (Standard) - Empfohlen für Internet-Systeme │
+│     ✅ Schneller, ✅ Browser-Cache, ✅ Auto-Updates │
+│     ⚠️ Erfordert Internetverbindung                 │
+│                                                      │
+│  ○ Lokal - Für Intranet / Offline-Systeme          │
+│     ✅ Offline-fähig, ✅ Datenschutz                │
+│     ⚠️ Manuelle Installation erforderlich           │
+│                                                      │
+│  [Umschalten]                                        │
+│                                                      │
+│  ℹ️ Aktueller Status: CDN aktiv                     │
+│     Bootstrap 5.3.3 von jsdelivr.net                │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
+
+#### 3. Installations-Assistent (bei Umschaltung zu Lokal)
+
+**Modal nach Toggle:**
+```
+┌──────────────────────────────────────────────────────┐
+│  📦 Lokale Assets installieren                       │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  Um FileSubly im Offline-Modus zu nutzen, müssen    │
+│  folgende Libraries heruntergeladen werden:         │
+│                                                      │
+│  ✅ Bootstrap 5.3.3                                  │
+│     Download: https://getbootstrap.com/             │
+│     Ziel: assets/css/bootstrap.min.css              │
+│           assets/js/bootstrap.bundle.min.js         │
+│                                                      │
+│  📋 Installations-Schritte:                         │
+│                                                      │
+│  1. Bootstrap herunterladen:                        │
+│     https://github.com/twbs/bootstrap/releases/     │
+│        download/v5.3.3/bootstrap-5.3.3-dist.zip     │
+│                                                      │
+│  2. Entpacken und Dateien kopieren:                 │
+│     bootstrap.min.css → assets/css/                 │
+│     bootstrap.bundle.min.js → assets/js/            │
+│                                                      │
+│  3. Optional: TCPDF (falls nicht vorhanden)         │
+│     Composer: composer require tecnickcom/tcpdf     │
+│     Manuell: https://github.com/tecnickcom/TCPDF    │
+│     Ziel: lib/tcpdf/                                │
+│                                                      │
+│  4. Berechtigungen setzen (Linux):                  │
+│     chmod -R 755 assets/                            │
+│                                                      │
+│  [Installation abgeschlossen] [Abbrechen]           │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+```
+
+#### 4. Automatische Asset-Detection
+
+**Beim Umschalten auf Lokal:**
+```php
+function validateLocalAssets(): array {
+    $required = [
+        'assets/css/bootstrap.min.css' => 'Bootstrap CSS',
+        'assets/js/bootstrap.bundle.min.js' => 'Bootstrap JavaScript',
+        'lib/tcpdf/tcpdf.php' => 'TCPDF Library'
+    ];
+    
+    $missing = [];
+    foreach ($required as $path => $name) {
+        if (!file_exists(__DIR__ . '/' . $path)) {
+            $missing[] = $name;
+        }
+    }
+    
+    return $missing;
+}
+```
+
+**Warnung bei fehlenden Files:**
+```
+⚠️ Achtung: Folgende Assets fehlen noch:
+   • Bootstrap CSS
+   • Bootstrap JavaScript
+
+FileSubly wird möglicherweise nicht korrekt funktionieren.
+Siehe Installationsanleitung.
+```
+
+### Technische Umsetzung
+
+#### Phase 1: Helper-Funktionen (30 Min)
+```php
+// In config.php
+
+function getAssetUrl(string $type): string {
+    $settings = loadSettings();
+    $useCdn = $settings['deployment']['use_cdn'] ?? true;
+    
+    if ($useCdn) {
+        return $settings['deployment']['cdn_urls'][$type] ?? '';
+    }
+    
+    $localPaths = [
+        'bootstrap_css' => 'assets/css/bootstrap.min.css',
+        'bootstrap_js' => 'assets/js/bootstrap.bundle.min.js'
+    ];
+    
+    return $localPaths[$type] ?? '';
+}
+
+function getAssetIntegrity(string $type): string {
+    $settings = loadSettings();
+    $useCdn = $settings['deployment']['use_cdn'] ?? true;
+    
+    if (!$useCdn) {
+        return ''; // Keine Integrity-Checks bei lokalen Files
+    }
+    
+    return $settings['deployment']['cdn_urls'][$type . '_integrity'] ?? '';
+}
+```
+
+#### Phase 2: Template-Anpassung (45 Min)
+```php
+// In index.php und allen anderen Templates
+<link 
+    href="<?= getAssetUrl('bootstrap_css') ?>" 
+    rel="stylesheet"
+    <?php if ($integrity = getAssetIntegrity('bootstrap_css')): ?>
+        integrity="<?= $integrity ?>"
+        crossorigin="anonymous"
+    <?php endif; ?>
+>
+
+<script 
+    src="<?= getAssetUrl('bootstrap_js') ?>"
+    <?php if ($integrity = getAssetIntegrity('bootstrap_js')): ?>
+        integrity="<?= $integrity ?>"
+        crossorigin="anonymous"
+    <?php endif; ?>
+></script>
+```
+
+#### Phase 3: Admin-Toggle (60 Min)
+1. Settings-Sektion "Deployment" hinzufügen
+2. Toggle-Button mit Live-Preview
+3. Validierung bei Umschaltung (validateLocalAssets)
+4. Warnungen bei fehlenden Files
+5. Modal mit Installationsanleitung
+
+#### Phase 4: Installer-Script (30 Min)
+```bash
+#!/bin/bash
+# install_assets.sh - Optional: Automatisches Download-Script
+
+BOOTSTRAP_VERSION="5.3.3"
+BOOTSTRAP_URL="https://github.com/twbs/bootstrap/releases/download/v${BOOTSTRAP_VERSION}/bootstrap-${BOOTSTRAP_VERSION}-dist.zip"
+
+echo "📦 Downloading Bootstrap ${BOOTSTRAP_VERSION}..."
+wget $BOOTSTRAP_URL -O bootstrap.zip
+
+echo "📂 Extracting..."
+unzip -q bootstrap.zip
+
+echo "📋 Copying files..."
+cp bootstrap-${BOOTSTRAP_VERSION}-dist/css/bootstrap.min.css assets/css/
+cp bootstrap-${BOOTSTRAP_VERSION}-dist/js/bootstrap.bundle.min.js assets/js/
+
+echo "🧹 Cleaning up..."
+rm -rf bootstrap.zip bootstrap-${BOOTSTRAP_VERSION}-dist
+
+echo "✅ Installation complete!"
+```
+
+#### Phase 5: Dokumentation (30 Min)
+- README.md Update: CDN vs. Lokal Sektion
+- INSTALL.md: Detaillierte Anleitung für beide Modi
+- Troubleshooting: "Assets fehlen" Fehlerbehandlung
+
+### Vorteile
+
+**Für Entwickler:**
+- 🚀 Schnellere Entwicklung (CDN-Mode)
+- 🔄 Einfache Updates (nur CDN-URLs ändern)
+- 📦 Kleineres Git-Repo (bei CDN-Default)
+
+**Für Benutzer:**
+- ⚡ Schnellerer Setup (CDN-Mode)
+- 🔒 Datenschutz-Option (Lokal-Mode)
+- 🌐 Flexibilität je nach Umgebung
+
+**Für Admins:**
+- 🎛️ Einfaches Umschalten per Toggle
+- ✅ Automatische Validierung
+- 📋 Klare Installationsanleitung
+
+### Nachteile / Überlegungen
+
+**CDN-Modus:**
+- ⚠️ Externe Abhängigkeit (jsdelivr.net)
+- ⚠️ Potenzielle Tracking-Cookies (Browser-Fingerprinting)
+- ⚠️ Erfordert Internetverbindung
+
+**Lokal-Modus:**
+- ⚠️ Manuelle Installation erforderlich
+- ⚠️ Größeres Repo (wenn Assets committed)
+- ⚠️ Manuelle Updates bei neuen Bootstrap-Versionen
+
+### Entscheidung: Was ist Standard?
+
+**Empfehlung: CDN als Standard**
+
+**Argumente:**
+- ✅ Einfacherer Einstieg für neue User
+- ✅ Kleinere Repository-Größe
+- ✅ Bootstrap wird von vielen Seiten genutzt (Browser-Cache)
+- ✅ FileSubly ist primär für Internet-Umgebungen gedacht
+- ⚠️ Lokal-Mode bleibt optional für Spezialfälle
+
+**Gegenargument: Lokal als Standard** (aktuelle Situation)
+
+**Argumente:**
+- ✅ Offline-fähig out-of-the-box
+- ✅ Keine externen Abhängigkeiten
+- ✅ Datenschutz-freundlicher (keine CDN-Anfragen)
+- ✅ Funktionierende Installation garantiert
+- ⚠️ Größerer Initial-Download
+
+**Fazit:** Aktuell ist **Lokal-Mode Standard** und das ist gut so! 
+Das CDN-Feature sollte **optional** bleiben für User die:
+- Bandbreite sparen wollen
+- Schnelleren Setup brauchen
+- Bereits viele Bootstrap-Projekte nutzen (Cache-Vorteil)
+
+### Alternative: Hybrid-Ansatz
+
+**Best of Both Worlds:**
+1. **Repository:** Enthält lokale Assets (wie jetzt)
+2. **Settings:** Toggle für CDN (optional)
+3. **Fallback:** Wenn CDN fehlschlägt → Automatisch auf Lokal wechseln
+
+```php
+function getAssetUrl(string $type): string {
+    $settings = loadSettings();
+    $useCdn = $settings['deployment']['use_cdn'] ?? false; // Standard: Lokal!
+    
+    if ($useCdn) {
+        $cdnUrl = $settings['deployment']['cdn_urls'][$type] ?? '';
+        
+        // CDN-Check: Ist CDN erreichbar?
+        if ($cdnUrl && isCdnReachable($cdnUrl)) {
+            return $cdnUrl;
+        }
+        
+        // Fallback auf Lokal
+        error_log("CDN nicht erreichbar, Fallback auf lokale Assets");
+    }
+    
+    // Standard: Lokale Assets
+    $localPaths = [
+        'bootstrap_css' => 'assets/css/bootstrap.min.css',
+        'bootstrap_js' => 'assets/js/bootstrap.bundle.min.js'
+    ];
+    
+    return $localPaths[$type] ?? '';
+}
+
+function isCdnReachable(string $url, int $timeout = 2): bool {
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_NOBODY, true); // HEAD-Request
+    curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    
+    return $httpCode === 200;
+}
+```
+
+### Implementation Priority
+
+**Jetzt:** ❌ Nicht prioritär  
+**Warum:**
+- Aktuelle Lösung (lokal) funktioniert perfekt
+- Kein dringender Bedarf für CDN-Modus
+- Andere Features wichtiger (Email, Error-Reporting)
+
+**Später (v1.6.0):** ✅ Nice-to-Have Feature  
+**Wenn:**
+- Email + Error-Reporting läuft
+- User fragen explizit nach CDN-Option
+- Größere Refactoring-Phase geplant
+
+### Dokumentation in README
+
+**Neue Sektion hinzufügen:**
+```markdown
+## 🌐 Asset-Auslieferung (CDN vs. Lokal)
+
+**Standard:** Lokale Assets (Offline-fähig)
+
+FileSubly nutzt standardmäßig **lokale Kopien** von Bootstrap und anderen Libraries.
+Dies garantiert:
+- ✅ Offline-Funktionalität
+- ✅ Keine externen Abhängigkeiten
+- ✅ Datenschutz (keine CDN-Tracking)
+
+**Optional:** CDN-Modus für schnelleren Setup und kleinere Repo-Größe.
+Aktivierung: ⚙️ Einstellungen → Deployment → CDN aktivieren
+
+**Hinweis:** Beim Wechsel zwischen CDN und Lokal werden automatisch
+die benötigten Assets validiert und ggf. Installationshinweise angezeigt.
+```
+
+---
+
+**Erstellt:** 07.12.2025  
+**Autor:** Andreas Duswald + GitHub Copilot  
+**Status:** 💡 Konzept für zukünftige Entwicklung (v1.6.0)  
+**Priorität:** Niedrig - Nice-to-Have
+
+---
+
+**Erstellt:** 07.12.2025  
+**Autor:** Andreas Duswald + GitHub Copilot  
+**Status:** 📝 Konzept bereit für Umsetzung nach E-Mail-Feature
+
+---
+
 **Erstellt:** 07.12.2025  
 **Autor:** Andreas Duswald + GitHub Copilot  
 **Status:** 📝 Konzept bereit für Umsetzung

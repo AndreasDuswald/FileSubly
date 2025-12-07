@@ -351,12 +351,147 @@ function renderLogin(string $brand, string $title, ?string $error): void
             <div class="mt-3 text-center">
                 <small class="text-muted">
                     <?= htmlspecialchars($title) ?> v<?= htmlspecialchars(getAppVersion()) ?> | 
-                    <a href="https://github.com/AndreasDuswald/FileSubly/tree/master" target="_blank" rel="noopener" class="text-muted">ℹ️ Info</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#creditsModal" class="text-muted text-decoration-none">ℹ️ Info & Credits</a>
                 </small>
             </div>
         </div>
     </div>
 
+    <!-- Credits Modal -->
+    <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="creditsModalLabel">ℹ️ Info & Credits</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <h6 class="fw-bold">📦 FileSubly v<?= htmlspecialchars(getAppVersion()) ?></h6>
+                        <p class="text-muted mb-2">
+                            Ein modernes, sicheres Datei-Upload und Download-System mit Benutzerverwaltung und Rollen-basierter Zugriffskontrolle.
+                        </p>
+                        <p class="mb-0">
+                            <small>
+                                <strong>Entwickelt von:</strong> Andreas Duswald<br>
+                                <strong>Lizenz:</strong> MIT License © 2025<br>
+                                <strong>GitHub:</strong> <a href="https://github.com/AndreasDuswald/FileSubly" target="_blank" rel="noopener">github.com/AndreasDuswald/FileSubly</a>
+                            </small>
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="mb-3">
+                        <h6 class="fw-bold">🙏 Verwendete Open-Source Libraries</h6>
+                        <p class="text-muted small mb-3">
+                            Dieses Projekt wäre ohne die großartige Arbeit der Open-Source-Community nicht möglich. 
+                            Herzlichen Dank an alle Contributors und Maintainer!
+                        </p>
+
+                        <div class="row g-3">
+                            <!-- Bootstrap -->
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Bootstrap 5.3.3</h6>
+                                        <p class="card-text small text-muted">
+                                            Leistungsstarkes Frontend-Framework für responsive Design
+                                        </p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="https://getbootstrap.com" target="_blank" rel="noopener" class="badge bg-primary text-decoration-none">
+                                                🌐 Website
+                                            </a>
+                                            <a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" class="badge bg-dark text-decoration-none">
+                                                📦 GitHub
+                                            </a>
+                                            <span class="badge bg-secondary">MIT License</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TCPDF -->
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title">TCPDF 6.7.5</h6>
+                                        <p class="card-text small text-muted">
+                                            PHP-Bibliothek zur PDF-Generierung (Custom Lists Export)
+                                        </p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="https://tcpdf.org" target="_blank" rel="noopener" class="badge bg-primary text-decoration-none">
+                                                🌐 Website
+                                            </a>
+                                            <a href="https://github.com/tecnickcom/TCPDF" target="_blank" rel="noopener" class="badge bg-dark text-decoration-none">
+                                                📦 GitHub
+                                            </a>
+                                            <span class="badge bg-secondary">LGPL-3.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FPDF -->
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title">FPDF 1.86</h6>
+                                        <p class="card-text small text-muted">
+                                            PHP-Klasse zur PDF-Erstellung (Merge-Funktionalität)
+                                        </p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="http://www.fpdf.org" target="_blank" rel="noopener" class="badge bg-primary text-decoration-none">
+                                                🌐 Website
+                                            </a>
+                                            <span class="badge bg-secondary">Freeware</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FPDI -->
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h6 class="card-title">FPDI 2.6.0</h6>
+                                        <p class="card-text small text-muted">
+                                            PHP-Erweiterung für FPDF zum Import existierender PDFs
+                                        </p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="https://www.setasign.com/fpdi" target="_blank" rel="noopener" class="badge bg-primary text-decoration-none">
+                                                🌐 Website
+                                            </a>
+                                            <a href="https://github.com/Setasign/FPDI" target="_blank" rel="noopener" class="badge bg-dark text-decoration-none">
+                                                📦 GitHub
+                                            </a>
+                                            <span class="badge bg-secondary">MIT License</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="text-center">
+                        <p class="small text-muted mb-1">
+                            <strong>Support & Dokumentation:</strong><br>
+                            Bei Fragen oder Problemen, siehe 
+                            <a href="https://github.com/AndreasDuswald/FileSubly/blob/master/README.md" target="_blank" rel="noopener">README.md</a> 
+                            oder öffne ein <a href="https://github.com/AndreasDuswald/FileSubly/issues" target="_blank" rel="noopener">GitHub Issue</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     </body>
     </html>
     <?php

@@ -324,9 +324,43 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe [LICENSE](LICENSE) f�
 
 ## 🙏 Danksagungen
 
-- Bootstrap Team für das großartige CSS-Framework
-- FPDF/FPDI für PDF-Manipulation
-- Alle Contributors und Tester
+Dieses Projekt wäre ohne die großartige Arbeit der Open-Source-Community nicht möglich. Herzlichen Dank an:
+
+### 🎨 Frontend & UI
+
+**[Bootstrap 5.3.3](https://getbootstrap.com)**  
+Leistungsstarkes, responsive Frontend-Framework  
+📦 [GitHub](https://github.com/twbs/bootstrap) | 📄 MIT License  
+Verwendung: Komplettes UI/UX Design, Modals, Navigation, Forms
+
+### 📄 PDF-Verarbeitung
+
+**[TCPDF 6.7.5](https://tcpdf.org)**  
+PHP-Bibliothek zur PDF-Generierung  
+📦 [GitHub](https://github.com/tecnickcom/TCPDF) | 📄 LGPL-3.0 License  
+Verwendung: Custom Lists PDF-Export mit nativen Rendering-Methoden
+
+**[FPDF 1.86](http://www.fpdf.org)**  
+PHP-Klasse zur einfachen PDF-Erstellung  
+📄 Freeware License  
+Verwendung: Basis für PDF-Merge Funktionalität
+
+**[FPDI 2.6.0](https://www.setasign.com/fpdi)**  
+PHP-Erweiterung für FPDF zum Import existierender PDFs  
+📦 [GitHub](https://github.com/Setasign/FPDI) | 📄 MIT License  
+Verwendung: Import und Zusammenführen von PDF-Dateien
+
+### 👨‍💻 Entwicklung
+
+**PHP 7.4+** mit Extensions: `fileinfo`, `json`, `session`, `gd`  
+**Apache Webserver** mit mod_rewrite  
+**Git & GitHub** für Versionskontrolle
+
+### 💡 Community
+
+Ein besonderer Dank an alle Contributors, Tester und die Open-Source-Community für ihre unermüdliche Arbeit und das Teilen von Wissen.
+
+**ℹ️ Credits anzeigen:** Klicke auf "ℹ️ Info & Credits" auf der Login-Seite für detaillierte Informationen zu allen verwendeten Libraries.
 
 ---
 
