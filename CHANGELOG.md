@@ -1,16 +1,36 @@
 # FileSubly - Version History
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -19,16 +39,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -39,16 +79,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -57,16 +117,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -79,16 +159,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -97,16 +197,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -117,16 +237,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -135,16 +275,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -159,16 +319,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -177,16 +357,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -197,16 +397,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -215,16 +435,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -237,16 +477,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -255,16 +515,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -275,16 +555,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -293,16 +593,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -319,16 +639,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -337,16 +677,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -357,16 +717,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -375,16 +755,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -397,16 +797,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -415,16 +835,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -435,16 +875,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -453,16 +913,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -477,16 +957,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -495,16 +995,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -515,16 +1035,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -533,16 +1073,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -555,16 +1115,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -573,16 +1153,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -593,16 +1193,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -611,16 +1231,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -638,16 +1278,36 @@
 ## [1.0.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -656,16 +1316,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -676,16 +1356,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -694,16 +1394,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -716,16 +1436,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -734,16 +1474,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -754,16 +1514,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -772,16 +1552,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -796,16 +1596,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -814,16 +1634,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -834,16 +1674,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -852,16 +1712,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -874,16 +1754,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -892,16 +1792,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -912,16 +1832,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -930,16 +1870,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -956,16 +1916,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -974,16 +1954,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -994,16 +1994,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1012,16 +2032,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1034,16 +2074,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1052,16 +2112,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1072,16 +2152,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1090,16 +2190,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1114,16 +2234,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1132,16 +2272,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1152,16 +2312,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1170,16 +2350,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1192,16 +2392,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1210,16 +2430,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1230,16 +2470,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1248,16 +2508,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1275,16 +2555,36 @@
 ### ðŸŽ‰ Erstes stabiles Release
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1293,16 +2593,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1313,16 +2633,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1331,16 +2671,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1353,16 +2713,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1371,16 +2751,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1391,16 +2791,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1409,16 +2829,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1433,16 +2873,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1451,16 +2911,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1471,16 +2951,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1489,16 +2989,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1511,16 +3031,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1529,16 +3069,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1549,16 +3109,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1567,16 +3147,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1593,16 +3193,36 @@
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1611,16 +3231,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1631,16 +3271,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1649,16 +3309,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1671,16 +3351,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1689,16 +3389,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1709,16 +3429,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1727,16 +3467,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1751,16 +3511,36 @@
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1769,16 +3549,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1789,16 +3589,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1807,16 +3627,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1829,16 +3669,36 @@
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1847,16 +3707,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1867,16 +3747,36 @@
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1885,16 +3785,36 @@
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1914,16 +3834,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### âœ¨ Features
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1932,16 +3872,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1952,16 +3912,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1970,16 +3950,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -1992,16 +3992,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2010,16 +4030,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2030,16 +4070,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2048,16 +4108,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2072,16 +4152,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2090,16 +4190,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2110,16 +4230,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2128,16 +4268,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2150,16 +4310,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2168,16 +4348,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2188,16 +4388,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2206,16 +4426,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2232,16 +4472,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2250,16 +4510,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2270,16 +4550,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2288,16 +4588,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2310,16 +4630,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2328,16 +4668,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2348,16 +4708,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2366,16 +4746,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2390,16 +4790,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2408,16 +4828,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2428,16 +4868,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2446,16 +4906,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2468,16 +4948,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2486,16 +4986,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2506,16 +5026,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2524,16 +5064,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2593,16 +5153,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“š Dokumentation
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2611,16 +5191,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2631,16 +5231,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2649,16 +5269,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2671,16 +5311,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2689,16 +5349,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2709,16 +5389,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2727,16 +5427,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2751,16 +5471,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2769,16 +5509,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2789,16 +5549,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2807,16 +5587,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2829,16 +5629,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2847,16 +5667,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2867,16 +5707,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2885,16 +5745,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2911,16 +5791,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2929,16 +5829,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2949,16 +5869,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2967,16 +5907,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -2989,16 +5949,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3007,16 +5987,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3027,16 +6027,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3045,16 +6065,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3069,16 +6109,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3087,16 +6147,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3107,16 +6187,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3125,16 +6225,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3147,16 +6267,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3165,16 +6305,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3185,16 +6345,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3203,16 +6383,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3236,16 +6436,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ”§ Technisches
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3254,16 +6474,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3274,16 +6514,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3292,16 +6552,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3314,16 +6594,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3332,16 +6632,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3352,16 +6672,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3370,16 +6710,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3394,16 +6754,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3412,16 +6792,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3432,16 +6832,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3450,16 +6870,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3472,16 +6912,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3490,16 +6950,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3510,16 +6990,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3528,16 +7028,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3554,16 +7074,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3572,16 +7112,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3592,16 +7152,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3610,16 +7190,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3632,16 +7232,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3650,16 +7270,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3670,16 +7310,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3688,16 +7348,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3712,16 +7392,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3730,16 +7430,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3750,16 +7470,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3768,16 +7508,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3790,16 +7550,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3808,16 +7588,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3828,16 +7628,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3846,16 +7666,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3880,16 +7720,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 #### ðŸ“¦ Deployment
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3898,16 +7758,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3918,16 +7798,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3936,16 +7836,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3958,16 +7878,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3976,16 +7916,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -3996,16 +7956,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4014,16 +7994,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4038,16 +8038,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4056,16 +8076,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4076,16 +8116,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4094,16 +8154,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4116,16 +8196,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4134,16 +8234,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4154,16 +8274,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4172,16 +8312,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4198,16 +8358,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4216,16 +8396,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4236,16 +8436,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4254,16 +8474,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4276,16 +8516,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4294,16 +8554,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4314,16 +8594,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4332,16 +8632,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4356,16 +8676,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4374,16 +8714,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4394,16 +8754,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4412,16 +8792,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4434,16 +8834,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4452,16 +8872,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4472,16 +8912,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4490,16 +8950,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4524,16 +9004,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## ZukÃ¼nftige Versionen
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4542,16 +9042,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4562,16 +9082,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4580,16 +9120,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4602,16 +9162,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4620,16 +9200,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4640,16 +9240,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4658,16 +9278,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4682,16 +9322,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4700,16 +9360,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4720,16 +9400,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4738,16 +9438,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4760,16 +9480,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4778,16 +9518,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4798,16 +9558,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4816,16 +9596,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4842,16 +9642,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4860,16 +9680,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4880,16 +9720,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4898,16 +9758,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4920,16 +9800,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4938,16 +9838,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4958,16 +9878,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -4976,16 +9916,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5000,16 +9960,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5018,16 +9998,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5038,16 +10038,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5056,16 +10076,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5078,16 +10118,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5096,16 +10156,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5116,16 +10196,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5134,16 +10234,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5161,16 +10281,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [1.1.0] - Geplant
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5179,16 +10319,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5199,16 +10359,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5217,16 +10397,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5239,16 +10439,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5257,16 +10477,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5277,16 +10517,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5295,16 +10555,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5319,16 +10599,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5337,16 +10637,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5357,16 +10677,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5375,16 +10715,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5397,16 +10757,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5415,16 +10795,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5435,16 +10835,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5453,16 +10873,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5479,16 +10919,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5497,16 +10957,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5517,16 +10997,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5535,16 +11035,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5557,16 +11077,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5575,16 +11115,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5595,16 +11155,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5613,16 +11193,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5637,16 +11237,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5655,16 +11275,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5675,16 +11315,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5693,16 +11353,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5715,16 +11395,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5733,16 +11433,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5753,16 +11473,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5771,16 +11511,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5803,16 +11563,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ### [2.0.0] - Geplant
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5821,16 +11601,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5841,16 +11641,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5859,16 +11679,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5881,16 +11721,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5899,16 +11759,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5919,16 +11799,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5937,16 +11837,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5961,16 +11881,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5979,16 +11919,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -5999,16 +11959,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6017,16 +11997,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6039,16 +12039,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6057,16 +12077,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6077,16 +12117,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6095,16 +12155,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6121,16 +12201,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.1] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6139,16 +12239,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6159,16 +12279,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6177,16 +12317,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6199,16 +12359,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6217,16 +12397,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6237,16 +12437,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6255,16 +12475,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6279,16 +12519,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.2] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6297,16 +12557,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6317,16 +12597,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6335,16 +12635,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6357,16 +12677,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.3] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6375,16 +12715,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6395,16 +12755,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.4] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes
@@ -6413,16 +12793,36 @@ VollstÃ¤ndiges Dokumentenverwaltungs-System mit Benutzerverwaltung und Bibliot
 ## [1.0.5] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 
 ## [1.1.0] - 2025-12-04
 
 
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
+
 ## [1.1.1] - 2025-12-05
 
+
+## [1.2.0] - 2025-12-07
+
+### Changes
+- feat: Add file priority system with visual highlighting
 ### Changes
 - fix: Add missing save_sort_order.php and fix drag-drop save functionality
 ### Changes

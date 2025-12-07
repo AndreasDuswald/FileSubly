@@ -13,7 +13,7 @@ function loadSettings(): array
 
     // Default settings
     $defaults = [
-        'app_name' => 'AD - FileSubly 1.1.1',
+        'app_name' => 'AD - FileSubly 1.2.0',
         'brand_name' => 'Download-Service',
         'allowed_extensions' => ['pdf', 'xlsx', 'xlsm', 'doc', 'docx'],
         'max_file_size_mb' => 50

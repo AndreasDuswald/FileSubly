@@ -365,8 +365,10 @@ function renderLogin(string $brand, string $title, ?string $error): void
 $files = [];
 $orderFile = $downloadDir . '/.sort_order.json';
 $statsFile = $downloadDir . '/.download_stats.json';
+$priorityFile = $downloadDir . '/.file_priorities.json';
 $savedOrder = [];
 $downloadStats = [];
+$filePriorities = [];
 
 // Load saved sort order
 if (file_exists($orderFile)) {
@@ -376,6 +378,11 @@ if (file_exists($orderFile)) {
 // Load download statistics
 if (file_exists($statsFile)) {
     $downloadStats = json_decode(file_get_contents($statsFile), true) ?? [];
+}
+
+// Load file priorities
+if (file_exists($priorityFile)) {
+    $filePriorities = json_decode(file_get_contents($priorityFile), true) ?? [];
 }
 
 if (is_dir($downloadDir)) {
@@ -405,6 +412,7 @@ if (is_dir($downloadDir)) {
             'mtime' => filemtime($path),
             'ext' => $ext,
             'downloads' => $downloadStats[$file] ?? 0,
+            'priority' => $filePriorities[$file] ?? 0,
         ];
     }
 
@@ -541,9 +549,15 @@ if (isset($_SESSION['upload_error'])) {
                 </thead>
 
                 <tbody id="fileTable">
-                <?php foreach ($files as $f): ?>
-                    <tr class="<?= hasPermission('sort') ? 'draggable-row' : '' ?>" 
+                <?php foreach ($files as $f):
+                    $prioClass = '';
+                    if ($f['priority'] > 0) {
+                        $prioClass = 'priority-' . $f['priority'];
+                    }
+                    ?>
+                    <tr class="<?= hasPermission('sort') ? 'draggable-row' : '' ?> <?= $prioClass ?>" 
                         data-filename="<?= htmlspecialchars($f['name']) ?>"
+                        data-priority="<?= $f['priority'] ?>"
                         draggable="<?= hasPermission('sort') ? 'true' : 'false' ?>">
                         <?php if (hasPermission('sort')): ?>
                             <td class="drag-handle">⋮⋮</td>
@@ -578,6 +592,13 @@ if (isset($_SESSION['upload_error'])) {
                                     onclick="downloadFile('<?= htmlspecialchars($f['name'], ENT_QUOTES) ?>')"
                                     title="Herunterladen"
                                 >📥</button>
+                                <?php if (hasPermission('manage_users')): ?>
+                                    <button
+                                        class="btn btn-warning btn-priority"
+                                        onclick="openPriorityModal('<?= htmlspecialchars($f['name'], ENT_QUOTES) ?>', <?= $f['priority'] ?>)"
+                                        title="Priorität setzen"
+                                    >💡</button>
+                                <?php endif; ?>
                                 <?php if (hasPermission('delete')): ?>
                                     <button
                                         class="btn btn-danger btn-delete"
@@ -619,7 +640,7 @@ if (isset($_SESSION['upload_error'])) {
             <strong>Datei hierher ziehen</strong><br>oder klicken
             <div class="mt-2 text-muted dropzone-info">
                 Erlaubt: <?php
-                    $extLabels = array_map(fn ($e) => strtoupper($e), $allowedExts);
+                        $extLabels = array_map(fn ($e) => strtoupper($e), $allowedExts);
         echo implode(', ', $extLabels);
         ?><br>
                 Max. Dateigröße: <?= $config['max_file_size_mb'] ?> MB
@@ -649,6 +670,66 @@ function confirmDelete(fileName) {
         document.getElementById('deleteFileName').value = fileName;
         document.getElementById('deleteForm').submit();
     }
+}
+
+// Priority Management
+let currentPriorityFile = '';
+
+function openPriorityModal(fileName, currentPriority) {
+    currentPriorityFile = fileName;
+    document.getElementById('priorityFileName').textContent = fileName;
+    document.getElementById('prioritySelect').value = currentPriority;
+    updatePriorityPreview(currentPriority);
+    
+    const modal = new bootstrap.Modal(document.getElementById('priorityModal'));
+    modal.show();
+}
+
+function updatePriorityPreview(priority) {
+    const preview = document.getElementById('priorityPreview');
+    const select = document.getElementById('prioritySelect');
+    
+    select.addEventListener('change', function() {
+        updatePriorityPreview(this.value);
+    });
+    
+    if (priority == 0) {
+        preview.style.display = 'none';
+    } else {
+        preview.style.display = 'block';
+        preview.className = 'alert priority-' + priority;
+    }
+}
+
+function savePriority() {
+    const priority = document.getElementById('prioritySelect').value;
+    
+    fetch('save_file_priority.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': '<?= generateCsrfToken() ?>'
+        },
+        body: 'filename=' + encodeURIComponent(currentPriorityFile) + 
+              '&priority=' + encodeURIComponent(priority)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Reload page to show updated priority
+            location.reload();
+        } else {
+            alert('Fehler beim Speichern der Priorität');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Fehler beim Speichern der Priorität');
+    });
+    
+    // Close modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('priorityModal'));
+    modal.hide();
 }
 
 <?php if (hasPermission('sort')): ?>
@@ -1017,6 +1098,41 @@ function showShortcutsHelp() {
     </div>
 </div>
 
+<!-- Priority Modal -->
+<div class="modal fade" id="priorityModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">💡 Priorität setzen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-3">Datei: <strong id="priorityFileName"></strong></p>
+                
+                <div class="mb-3">
+                    <label for="prioritySelect" class="form-label">Priorität:</label>
+                    <select id="prioritySelect" class="form-select">
+                        <option value="0">Keine Priorität</option>
+                        <option value="1">Prio 1 (Hoch)</option>
+                        <option value="2">Prio 2 (Mittel)</option>
+                        <option value="3">Prio 3 (Niedrig)</option>
+                    </select>
+                </div>
+
+                <div id="priorityPreview" class="alert" style="display:none;">
+                    <strong>Vorschau:</strong> Die Zeile wird so aussehen
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Abbrechen</button>
+                <button type="button" class="btn btn-primary" onclick="savePriority()">
+                    💾 Speichern
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Loading Overlay mit Flammy (für Merge und Download) -->
 <div id="loadingOverlay" class="loading-overlay" onclick="this.style.display='none';">
     <div class="loading-content">
@@ -1033,6 +1149,25 @@ function showShortcutsHelp() {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Priority row colors */
+.priority-1,
+.priority-1 td {
+    background-color: #ffcccc !important;
+    font-weight: bold;
+}
+
+.priority-2,
+.priority-2 td {
+    background-color: #ffffcc !important;
+    font-weight: bold;
+}
+
+.priority-3,
+.priority-3 td {
+    background-color: #cce5ff !important;
+    font-weight: bold;
 }
 </style>
 

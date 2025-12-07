@@ -29,6 +29,7 @@ bibliothek/*/
 # Download-Statistiken und Sortierung (können Dateinamen enthalten)
 .download_stats.json
 .sort_order.json
+.file_priorities.json
 
 # PHP temporäre Dateien
 *.tmp
